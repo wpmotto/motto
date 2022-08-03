@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+	@apply px-8 mx-auto max-w-screen-xl;
+}
+
+.lng {
+	display: block;
+	font-family: monospace;
+	width: 6ch;
+	overflow: hidden;
+	white-space: nowrap;	
+}

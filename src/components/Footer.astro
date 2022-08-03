@@ -1,0 +1,62 @@
+---
+import { Icon } from 'astro-icon'
+import Logo from "./Logo.astro";
+import { getAllPostsWithSlugs } from '../lib/api';
+import { social } from '../lib/site';
+
+async function getPosts() {
+  const postsWithSlugs = await getAllPostsWithSlugs(5);
+  return postsWithSlugs.edges.map(({ node }) => {
+    return { slug: node.slug, title: node.title, date: node.date }
+  });
+}
+
+const posts = await getPosts();
+// const posts = unsortedPosts.sort(function (a, b) {
+// 	return (
+// 		new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf()
+// 	);
+// });
+---
+<footer class="py-20">
+    <div class="wrapper">
+        <div class="grid grid-cols-1 md:grid-cols-4">
+            <div class="col-span-2">
+                <h1 class="inline-block w-32">
+                    <Logo/>
+                </h1>
+                <h2 class="mt-8 h4 uppercase text-slate-400 tracking-widest font-heading font-bold">Elsewhere</h2>
+                <ul class="flex space-x-4 my-6 text-slate-500">
+                    { social.map(i => <li>
+                        { i.name === 'wpvip' ? 
+                            <Icon class="w-8 h-8" name={i.name} title={i.title}/> : 
+                            <Icon class="w-8 h-8" pack="fa" name={i.name} title={i.title}/>
+                        }
+                    </li> ) }
+                </ul>
+                <a href="/contact" class="inline-block text-brand-midblue underline underline-offset-4">
+                    Reach out or follow us ➝
+                </a>
+                <h2 class="mt-12 h4 uppercase text-slate-400 tracking-widest font-heading font-bold">Legal</h2>
+                <p><a href="/privacy">Privacy Policy</a></p>
+                <p class="text-sm">Copyright {(new Date).getFullYear()}, Motto Design Studio Inc., All Rights Reserved</p>
+            </div>
+            <div class="col-span-2">
+                <h2 class="text-right h4 uppercase text-slate-400 tracking-widest font-heading font-bold mb-6">Latest From the Blog</h2>
+                <ul aria-label="Blog post list">
+                    {posts.map(({ title, date }) => (
+                    <li class="flex odd:bg-slate-50 rounded p-4 text-slate-700 items-end justify-between">
+                        <h3 class="text-sm font-heading">{title}</h3>
+                        <time class="text-xs text-slate-400">{new Date(date).toLocaleDateString("en-CA",  {year: 'numeric', month: 'long', day: 'numeric' })}</time>
+                    </li>
+                    ))}
+                </ul>
+                <div class="text-right mt-6">
+                    <a href="/blog" class="inline-block text-brand-midblue underline underline-offset-4">
+                        Read the Blog for all things WordPress ➝
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

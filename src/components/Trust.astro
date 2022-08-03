@@ -1,0 +1,50 @@
+---
+import Curve from '../svgs/curve.svg.astro';
+
+const logos = [
+	{alt: 'Mad in America', src: 'mad-in-america-logo.webp'},
+	{alt: 'Krispy Kreme Canada', src: 'krispy-kreme-logo.webp'},
+	{alt: 'CCM', src: 'ccm-logo.webp'},
+	{alt: 'Audicus', src: 'audicus-logo.webp'},
+]
+
+const partners = [
+	{alt: 'Kinsta', src: 'kinsta-logo.webp'},
+	{ src: 'google-g-suite-certified-logo.webp', alt: 'Google GSuite Certified' },
+	{ src: 'wordpress-plugin-logo.webp', alt: 'WordPress Plugin Author' },
+	{ src: 'wordpress-vip-logo.webp	', alt: 'WordPress VIP Agency Partner' },
+]
+---
+<div class="mt-20">
+    <div class="wrapper relative z-10 -mb-48">
+        <div class="bg-white shadow-lg rounded-lg p-16 tex-center max-w-4xl mx-auto">
+            <h2 class="text-center uppercase tracking-widest text-slate-400 font-heading mb-8 pb-4 border-b border-slate-200">
+                Companies that trust us
+            </h2>	
+            <div class="flex place-content-center flex-wrap gap-8">
+                {logos.map(logo => 
+                    <img title={logo.alt} class="inline-block w-36 object-contain grayscale mix-blend-multiply" src={`/logos/${logo.src}`} alt={logo.alt} />
+                )}
+            </div>
+        </div>        
+    </div>
+    <div class="bg-gradient-to-b from-brand-skyblue pt-[200px] to-brand-dark relative">
+        <Curve class="w-screen absolute -top-1 z-0"/>
+        <div class="text-white text-center max-w-2xl mx-auto py-20">
+            <h2 class="text-center uppercase tracking-widest text-blue-100 font-heading mb-8 pb-4 border-b border-blue-100/30">
+                Our Partners
+            </h2>	
+
+            <div class="flex justify-center gap-8 my-12">
+                {partners.map(logo => 
+                <div class="text-center">
+                    <img title={logo.alt} class="inline-block h-12 w-24 object-contain grayscale invert" src={`/partners/${logo.src}`} alt={logo.alt} />
+                </div>
+                )}
+            </div>
+
+            We partner and work with industry leading companies so you don't have to wonder if you're working with the best. We've worked with many companies over the years and have a thorough vetting process so we're 100% confident with the partners we work with.
+        </div>
+    </div>
+</div>
+

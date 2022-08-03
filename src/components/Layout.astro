@@ -1,0 +1,22 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import i18next from "i18next";
+import { HeadHrefLangs } from "astro-i18next/components";
+
+let title = "Motto";
+let description = "WordPress maintenance";
+
+---
+<html lang={i18next.language}>
+	<head>
+		<BaseHead title={title} description={description}/>
+	</head>
+
+	<body class="font-sans text-brand-darker">
+		<Header />
+        <slot></slot>
+		<Footer/>
+	</body>
+</html>

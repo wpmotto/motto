@@ -1,0 +1,24 @@
+---
+title: 'Contact Us'
+layout: "../layouts/Plain.astro"
+---
+import { social, business } from '../lib/site';
+import { Icon } from 'astro-icon';
+import ContactForm from '../components/ContactForm.tsx';
+
+<div className="max-w-screen-md mx-auto py-20">
+	<p className="flex justify-center space-x-6 text-lead">
+		<a className="text-brand-action underline underline-offset-2" href={`mailto:${business.email}`}>{business.email}</a>
+		<span className="text-slate-300">/</span>
+		<a className="text-brand-action underline underline-offset-2" href={`tel:${business.phone}`}>{business.phone}</a>
+	</p>
+	<ContactForm client:visible/>
+	<ul class="flex justify-center space-x-4 my-6 text-slate-500">
+		{ social.map(i => <li><a href={i.link} title={i.title}>
+			{ i.name === 'wpvip' ? 
+				<Icon className="w-8 h-8" name={i.name} title={i.title}/> : 
+				<Icon className="w-8 h-8" pack="fa" name={i.name} title={i.title}/>
+			}
+		</a></li> ) }
+	</ul>
+</div>

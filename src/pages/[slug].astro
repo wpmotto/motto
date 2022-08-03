@@ -1,0 +1,23 @@
+---
+import { getAllPostsWithSlugs, getPostBySlug } from '../lib/api';
+import Layout from '../components/Layout.astro';
+
+export async function getStaticPaths() {
+  const postsWithSlugs = await getAllPostsWithSlugs();
+  return postsWithSlugs.edges.map(({ node }) => {
+    return {
+      params: { slug: node.slug },
+    };
+  });
+}
+
+const { slug } = Astro.params;
+const post = await getPostBySlug(slug);
+---
+<Layout>
+  <div class="flex flex-col p-10">
+    <div class="mb-5 text-4xl font-bold">{post.title}</div>
+    <article class="prose lg:prose-xl" set:html={post.content}>
+    </article>
+  </div>
+</Layout>

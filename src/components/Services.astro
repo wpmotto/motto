@@ -1,0 +1,37 @@
+---
+const services = [
+    {
+        title: "WordPress Accessibility",
+        href: '/wordpress-accessibility',
+        image: "WordPress-Maintenance.svg",
+        description: "Making WordPress site accessible to users is now a legal requirement in many places. Learn how and why you should do it now."
+    },
+    {
+        title: "WordPress Optimization",
+        href: '/wordpress-optimization',
+        image: "WordPress-Accessibility.svg",
+        description: "Both google and your users will thank you for optimizing your WordPress site performance. We offer a guaranteed grade straigth from Google themselves."
+    },
+    {
+        title: "WordPress Block Development",
+        href: '/wordpress-block-development',
+        image: "WordPress-Block-Development.svg",
+        description: "The WordPress block editor and full site editing has arrived to WordPress. Don't get left behind. Read more how you can transition your classic site to the block editor."
+    },
+]
+---
+<section>
+    <h1 class="my-12 text-brand-dark font-heading font-extrabold text-h1 text-center">Our WordPress Services</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 place-content-center gap-12">
+    {services.map(service => 
+        <a href={service.href} class="block text-center p-8 shadow-lg rounded-lg bg-gradient-to-b to-brand-mint from-white ring-2 ring-brand-mint hover:from-brand-mint transition hover:shadow-xl hover:-translate-y-3">
+            <img class="h-52" height="208" width="309" src={`/assets/svgs/${service.image}`} alt={service.title} />
+            <h2 class="font-heading leading-tight font-semibold text-h4 text-brand-action mb-6">{service.title}</h2>
+            <p class="text-slate-600 text-sm">{service.description}</p>
+        </a>
+    )}
+    </div>
+    <p class="text-center my-12">
+        <a href="/wordpress-services">More WordPress Services ➝</a>
+    </p>
+</section>
