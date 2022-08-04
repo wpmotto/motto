@@ -32,41 +32,115 @@ export async function getAllPostsWithSlugs(num = 10000) {
   return data?.posts;
 }
 
-export async function getAllPagesWithSlugs() {
-  const data = await fetchAPI(`
-    {
-      pages(first: 10000) {
-        edges {
-          node {
-            slug
+export async function getRecentPosts(num = 12) {
+  const data = await fetchAPI(`{
+      posts(first: ${num}) {
+      edges {
+        node {
+          slug
+          title
+          date
+          content
+          author {
+            node {
+              avatar {
+                scheme
+                url
+                default
+                extraAttr
+              }
+              name
+              slug
+              uri
+            }
+          }
+          featuredImage {
+            node {
+              altText
+              mediaDetails {
+                sizes {
+                  sourceUrl
+                }
+              }
+            }
           }
         }
       }
     }
-    `);
-  return data?.pages;
-}
+  }`);
 
-export async function getPageBySlug(slug) {
-  const data = await fetchAPI(`
-    {
-      page(id: "${slug}", idType: URI) {
-        title
-        content
+  return data.posts.edges.map(({ node }) => {
+    const { slug, title, date, content, featuredImage, author } = node;
+    return {
+      title,
+      href: `/${slug}`,
+      datetime: date,
+      date: formatDate(date),
+      content,
+      imageAlt: featuredImage?.node.altText,
+      imageUrl: featuredImage?.node.mediaDetails.sizes[1].sourceUrl,
+      author: {
+        name: author?.node.name,
+        imageUrl: author?.node.avatar.url,
       }
     }
-    `);
-  return data?.page;
+  });
 }
 
-export async function getPostBySlug(slug) {
-  const data = await fetchAPI(`
-    {
-      post(id: "${slug}", idType: URI) {
-        title
-        content
+export async function getPost(slug) {
+  const data = await fetchAPI(`{
+    post(id: "${slug}", idType: URI) {
+      title
+      content
+      date
+      author {
+        node {
+          avatar {
+            scheme
+            url
+            default
+            extraAttr
+          }
+          name
+          slug
+          uri
+        }
+      }      
+      featuredImage {
+        node {
+          altText
+          mediaDetails {
+            sizes {
+              sourceUrl
+            }
+          }
+        }
       }
     }
-    `);
-  return data?.post;
+  }`);
+
+  const { title, date, content, featuredImage, author } = data.post;
+  return {
+    title,
+    href: `/${slug}`,
+    datetime: date,
+    date: formatDate(date),
+    content,
+    imageAlt: featuredImage?.node.altText,
+    imageUrl: featuredImage?.node.mediaDetails.sizes[1].sourceUrl,
+    author: {
+      name: author?.node.name,
+      imageUrl: author?.node.avatar.url,
+    }
+  }
+}
+
+function formatDate(date) {
+  return (new Date(date)).toLocaleDateString("en-CA", { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+function readingTime(text) {
+  const wpm = 225;
+  const words = text.trim().split(/\s+/).length;
+  return Math.ceil(words / wpm);
 }

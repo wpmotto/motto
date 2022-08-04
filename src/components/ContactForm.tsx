@@ -43,7 +43,7 @@ export default function ContactForm() {
     };
   
 	return (
-            <form method="post" onSubmit={submit} className="grid grid-cols-2 gap-4 my-12">
+        <form method="post" onSubmit={submit} className="grid grid-cols-2 gap-4 my-12">
                 <div>
                     <input type="text" name="fullname" placeholder="Name" className="w-full" />
                     { validation?.error?.fullname && 

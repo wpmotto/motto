@@ -1,22 +1,9 @@
 ---
 import { Icon } from 'astro-icon'
 import Logo from "./Logo.astro";
-import { getAllPostsWithSlugs } from '../lib/api';
+import { getRecentPosts } from '../lib/api';
 import { social } from '../lib/site';
-
-async function getPosts() {
-  const postsWithSlugs = await getAllPostsWithSlugs(5);
-  return postsWithSlugs.edges.map(({ node }) => {
-    return { slug: node.slug, title: node.title, date: node.date }
-  });
-}
-
-const posts = await getPosts();
-// const posts = unsortedPosts.sort(function (a, b) {
-// 	return (
-// 		new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf()
-// 	);
-// });
+const posts = await getRecentPosts(5);
 ---
 <footer class="py-20">
     <div class="wrapper">
@@ -47,7 +34,7 @@ const posts = await getPosts();
                     {posts.map(({ title, date }) => (
                     <li class="flex odd:bg-slate-50 rounded p-4 text-slate-700 items-end justify-between">
                         <h3 class="text-sm font-heading">{title}</h3>
-                        <time class="text-xs text-slate-400">{new Date(date).toLocaleDateString("en-CA",  {year: 'numeric', month: 'long', day: 'numeric' })}</time>
+                        <time class="text-xs text-slate-400">{date}</time>
                     </li>
                     ))}
                 </ul>
