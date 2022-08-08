@@ -2,7 +2,6 @@
 title: 'Privacy Policy'
 layout: "../layouts/Page.astro"
 ---
-# Privacy Policy
 
 ## Who we are
 

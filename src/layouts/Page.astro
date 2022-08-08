@@ -1,8 +1,5 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import i18next from "i18next";
+import Plain from "./Plain.astro";
 
 export interface Props {
 	content: {
@@ -17,32 +14,22 @@ export interface Props {
 
 const { content: { image, title, description } } = Astro.props as Props;
 ---
-<html lang={i18next.language}>
-	<head>
-		<BaseHead title={title} description={description} />
-	</head>
-
-	<body>
-		<Header />
-		<article class="wrapper content">
-			<header class="text-center">
-				<h1 class="text-h1 font-heading font-bold">{title}</h1>
-				{image && (
-					<img
-						width="720"
-						height="420"
-						loading="lazy"
-						src={image.src}
-						alt={image.alt}
-					/>
-				)}
-			</header>
-			<main class="wrapper">
-				<div class="prose mx-auto">
-					<slot></slot>
-				</div>
-			</main>
-		</article>
-		<Footer />
-	</body>
-</html>
+<Plain>
+	<article class="wrapper content">
+		<header class="text-center">
+			<h1 class="text-h1 font-heading font-bold">{title}</h1>
+			{image && (
+				<img
+					width="720"
+					height="420"
+					loading="lazy"
+					src={image.src}
+					alt={image.alt}
+				/>
+			)}
+		</header>
+		<main class="mt-12 prose mx-auto">
+			<slot></slot>
+		</main>
+	</article>
+</Plain>

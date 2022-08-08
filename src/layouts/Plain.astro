@@ -4,43 +4,18 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import i18next from "i18next";
 
-export interface Props {
-	content: {
-		title: string;
-		description: string;
-		image?: {
-			src: string;
-			alt: string;
-		};
-	}
-}
-
-const { content: { image, title, description } } = Astro.props as Props;
+const url = new URL(Astro.url.pathname, 'https://motto.ca'); //Astro.site
+const wpMetaRequest = await fetch(`${url.origin}/wp-json/rankmath/v1/getHead?url=${url.href}`);
+const meta = await wpMetaRequest.json();
 ---
 <html lang={i18next.language}>
-	<head>
-		<BaseHead title={title} description={description} />
+	<head set:html={meta.head}>
+		<BaseHead />
 	</head>
 
 	<body>
 		<Header />
-		<article class="wrapper content">
-			<header class="text-center">
-				<h1 class="text-h1 font-heading font-bold">{title}</h1>
-				{image && (
-					<img
-						width="720"
-						height="420"
-						loading="lazy"
-						src={image.src}
-						alt={image.alt}
-					/>
-				)}
-			</header>
-			<main class="wrapper">
-				<slot></slot>
-			</main>
-		</article>
+		<slot></slot>
 		<Footer />
 	</body>
 </html>

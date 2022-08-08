@@ -1,0 +1,57 @@
+---
+import Plain from "../layouts/Plain.astro";
+
+export interface Props {
+	content: {
+		title: string;
+		description: string;
+		sku: string;
+		price: number;
+		term: string;
+		included?: string[];
+	}
+}
+
+const { content: { 
+	price, 
+	term, 
+	sku, 
+	title, 
+	description,
+	included
+} } = Astro.props as Props;
+
+const files = await Astro.glob("../pages/wordpress-services/*.md");
+const services = included && files.filter(i => included.includes(i.frontmatter.sku));
+---
+<Plain>
+	<div class="wrapper">
+		<div>
+			<a href="/wordpress-services">← WordPress Services</a>
+		</div>		  
+		<article>
+			<header class="grid grid-cols-2 items-center gap-12">
+				<div>
+					<h1 class="text-h1 font-heading font-bold">{title}</h1>
+					<p class="lead">{description}</p>
+					<p class="text-lead">${price} / {term}</p>
+				</div>
+				<img src={`/assets/svgs/services/${sku}.svg`} />
+			</header>
+			{ services &&
+				<div class="flex space-x-6">
+					<h2>Included</h2>
+					{ services.map(service => 
+						<a href={service.url} class="p-8 shadow-lg">
+							<h3>{service.frontmatter.title}</h3>
+							<p>{service.frontmatter.description}</p>
+						</a>
+					) }
+				</div>
+			}
+			<main class="mt-12 prose mx-auto">
+				<slot></slot>
+			</main>
+		</article>
+	</div>
+</Plain>

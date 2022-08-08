@@ -13,3 +13,7 @@
 	overflow: hidden;
 	white-space: nowrap;	
 }
+
+.text-link {
+	@apply text-brand-action underline underline-offset-2;
+}

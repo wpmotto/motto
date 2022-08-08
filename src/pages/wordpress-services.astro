@@ -1,0 +1,27 @@
+---
+import Plain from '../layouts/Plain.astro';
+const services = await Astro.glob("../pages/wordpress-services/*.md");
+const fmt = new Intl.NumberFormat('en-CA', {
+  style: 'currency',
+  currency: 'USD',
+});
+---
+<Plain title="WordPress Services" description="WordPress Services">
+    <div class="wrapper">
+        <ul class="grid grid-cols-3 gap-12">
+            {services.map( ({ url, frontmatter }) => 
+            <li>
+                <a href={url} class="block shadow-lg p-8 rounded-lg">
+                    {frontmatter.title}
+					<img class="h-32" src={`/assets/svgs/services/${frontmatter.sku}.svg`} />
+                    { frontmatter.price &&
+                        <div>                            
+                            {fmt.format(frontmatter.price) + '/' + frontmatter.term} 
+                        </div>
+                    }
+                </a>
+            </li>
+            )}
+        </ul>
+    </div>
+</Plain>

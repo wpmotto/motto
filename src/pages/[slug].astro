@@ -1,6 +1,6 @@
 ---
 import { getAllPostsWithSlugs, getPost } from '../lib/api';
-import Layout from '../components/Layout.astro';
+import Plain from '../layouts/Plain.astro';
 
 export async function getStaticPaths() {
   const postsWithSlugs = await getAllPostsWithSlugs();
@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 const post = await getPost(slug);
 ---
-<Layout>
+<Plain title={post.title} description={post.title}>
   <div class="wrapper">
     <div>
       <a href="/blog">← Back to the Blog</a>
@@ -23,9 +23,11 @@ const post = await getPost(slug);
       <header class="text-center mb-12 max-w-screen-lg mx-auto">
         <h1 class="mb-5 text-h2 font-bold font-heading">{post.title}</h1>
         <time>{post.date}</time>
-        <img class="rounded-xl" src={post.imageUrl} alt={post.imageAlt} class="inline-block" />
+        {post.imageUrl && 
+          <img class="rounded-xl" src={post.imageUrl} alt={post.imageAlt} class="inline-block" />
+        }
       </header>
       <div class="prose lg:prose-xl mx-auto" set:html={post.content} />
     </article>
   </div>
-</Layout>
+</Plain>

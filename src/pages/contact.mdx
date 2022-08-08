@@ -1,12 +1,12 @@
 ---
 title: 'Contact Us'
-layout: "../layouts/Plain.astro"
+layout: "../layouts/Page.astro"
 ---
 import { social, business } from '../lib/site';
 import { Icon } from 'astro-icon';
 import ContactForm from '../components/ContactForm.tsx';
 
-<div className="max-w-screen-md mx-auto py-20">
+<div className="max-w-screen-md mx-auto pb-20">
 	<p className="flex justify-center space-x-6 text-lead">
 		<a className="text-brand-action underline underline-offset-2" href={`mailto:${business.email}`}>{business.email}</a>
 		<span className="text-slate-300">/</span>
