@@ -8,6 +8,9 @@ term: 'month'
 included: 
     - wp-hosting
     - wp-updates
+subnav: 
+    - Optimized Wordpress Hosting
+    - Daily Full Backups
 ---
 
 [Many studies](https://sucuri.net/reports/19-sucuri-2018-hacked-report.pdf) show that most hacked WordPress sites were compromised from out of date core or plugin files. This is almost entirely avoidable by keeping things up-to-date with a proper WordPress maintenance plan. The problem is that this can sometimes be tricky because updates can break a website. They should be made on a staging environment and tested thoroughly before being done on your live site. We make this dead simple by doing it for you by an experienced WordPress professional every month.
