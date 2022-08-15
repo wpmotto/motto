@@ -24,7 +24,7 @@ const post = await getPost(slug);
         <h1 class="mb-5 text-h2 font-bold font-heading">{post.title}</h1>
         <time>{post.date}</time>
         {post.imageUrl && 
-          <img class="rounded-xl" src={post.imageUrl} alt={post.imageAlt} class="inline-block" />
+          <img class="rounded-xl" src={`https://motto.ca${post.imageUrl}`} alt={post.imageAlt} class="inline-block" />
         }
       </header>
       <div class="prose lg:prose-xl mx-auto" set:html={post.content} />

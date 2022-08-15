@@ -4,26 +4,19 @@ import Services from '../components/Services.astro';
 import Audit from '../components/Audit.astro';
 import Stats from '../components/Stats.astro';
 import Trust from '../components/Trust.astro';
-import Shape from '../svgs/HeroShape.svg.astro';
+import PageHeader from '../components/PageHeader.astro';
 ---
 <Plain title="Homepage" description="Homepage">
 	<main>
-		<div class="bg-gradient-to-b from-white via-brand-mint to-brand-skyblue flex flex-col justify-center relative overflow-hidden max-w-[2400px] mx-auto">
-			<div class="wrapper w-full flex flex-col md:flex-row items-center z-10 h-[600px]">
-				<div class="max-w-xl space-y-4">
-					<h1 class="font-heading font-extrabold text-xl leading-none">Your WordPress Guardians</h1>
-					<p class="font-heading text-lg font-light">Never worry about your WordPress site again.
-						We'll be your dedicated WordPress web master.</p>
-					<a href="/wordpress-services/maintenance" class="inline-block rounded-full px-6 py-3 border-4 border-brand-midblue text-brand-midblue font-semibold uppercase tracking-wide font-heading bg-brand-midblue/10 hover:bg-brand-midblue hover:text-white transition-colors">
-						WordPress Maintenance
-					</a>
-				</div>
-				<div class="max-w-2xl h-full relative mt-12">
-					<lottie-player src="/motto-lottie.json" background="transparent" speed="0.8" loop="" autoplay=""></lottie-player>
-				</div>
-			</div>
-			<Shape class="w-[200vw] lg:w-full absolute bottom-0 z-0"/>
-		</div>
+		<PageHeader>
+			<h1 class="font-heading font-extrabold text-xl leading-none">Your WordPress Guardians</h1>
+			<p class="font-heading text-lg font-light">Never worry about your WordPress site again.
+				We'll be your dedicated WordPress web master.</p>
+			<a href="/wordpress-services/maintenance" class="inline-block rounded-full px-6 py-3 border-4 border-brand-midblue text-brand-midblue font-semibold uppercase tracking-wide font-heading bg-brand-midblue/10 hover:bg-brand-midblue hover:text-white transition-colors">
+				WordPress Maintenance
+			</a>
+			<lottie-player slot="graphic" src="/motto-lottie.json" background="transparent" speed="0.8" loop="" autoplay=""></lottie-player>
+		</PageHeader>
 
 		<div class="wrapper py-48 md:py-36 relative">
 			<div class="text-center max-w-full mx-auto w-[60ch]">

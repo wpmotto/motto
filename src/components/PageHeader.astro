@@ -1,0 +1,14 @@
+---
+import Shape from '../svgs/HeroShape.svg.astro';
+---
+<div class="bg-gradient-to-b from-white via-brand-mint to-brand-skyblue flex flex-col justify-center relative overflow-hidden max-w-[2400px] mx-auto">
+    <header class="wrapper grid grid-cols-1 md:grid-cols-2 gap-12 z-10 h-[600px] my-12 place-items-center">
+        <div class="space-y-4">
+            <slot/>
+        </div>
+        <div class="w-full h-full flex items-center justify-center">
+            <slot name="graphic"/>
+        </div>
+    </header>
+    <Shape class="w-[200vw] lg:w-full absolute bottom-0 z-0"/>
+</div>

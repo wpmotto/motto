@@ -1,5 +1,7 @@
 ---
 import Plain from "../layouts/Plain.astro";
+import { servicePriceFormatted } from '../lib/helpers';
+import PageHeader from '../components/PageHeader.astro';
 
 export interface Props {
 	content: {
@@ -27,38 +29,54 @@ const files = await Astro.glob("../pages/wordpress-services/*.md");
 const services = included && files.filter(i => included.includes(i.frontmatter.sku));
 
 const headerLink = ( heading ) => {
-	return '#' + heading.toLowerCase().replaceAll(' ', '-');
+	return '#' + heading.toLowerCase().replaceAll(',', '').replaceAll(' ', '-');
 }
-
-const fmt = new Intl.NumberFormat('en-CA', {
-  style: 'currency',
-  currency: 'USD',
-});
-
 ---
 <Plain>
 	<div class="wrapper">
-		<div>
-			<a href="/wordpress-services">← WordPress Services</a>
-		</div>		  
-		<article>
-			<header class="grid grid-cols-3 items-center gap-12">
-				<div class="col-span-2">
-					<h1 class="text-h1 font-heading font-bold">{title}</h1>
-					{ description && 
-						<p class="lead">{description}</p>
-					}
+		<a href="/wordpress-services">← WordPress Services</a>
+	</div>		  
+	<article>
+	<PageHeader>
+		<h1 class="text-h1 font-heading font-bold leading-tight">{title}</h1>
+		{ description && 
+			<p class="lead font-heading font-light">{description}</p>
+		}
+		<img slot="graphic" class="max-w-full max-h-96" src={`/assets/svgs/services/${sku}.svg`} />
+	</PageHeader>
+	<div class="wrapper flex justify-between gap-12 mt-12">
+		<div class="max-w-xl">
+			{ services &&
+			<div class="mb-12">
+					<h2 class="font-heading h4 uppercase text-slate-300 tracking-widest font-semibold">Also Included</h2>
+					<div class="border-2 border-slate-200 p-3 rounded-lg shadow-md">
+						{ services.map(service => 
+							<a href={service.url} class="p-8 grid grid-cols-2 text-slate-700 odd:bg-slate-50 rounded-md hover:bg-slate-100">
+								<span class="flex flex-col">
+									<h3 class="font-heading">{service.frontmatter.title}</h3>
+									<p class="text-slate-400">{servicePriceFormatted(service.frontmatter.price, service.frontmatter.term)} value</p>
+									<p class="text-link mt-auto">Learn More</p>
+								</span>
+								<p class="text-sm">
+									{service.frontmatter.description}
+								</p>
+							</a>
+						) }
+					</div>
 				</div>
-				<img src={`/assets/svgs/services/${sku}.svg`} />
-			</header>
-			<main class="flex justify-between gap-12 mt-12">
-				<div class="w-80">
-					<div class="bg-slate-100 rounded-lg p-4 sticky top-8">
-
+				}
+					<div class="prose mt-12">
+						<slot></slot>
+					</div>
+				</div>
+				<div class="w-96">
+					<div class="bg-slate-100 rounded-lg p-4 sticky top-8 shadow-lg">
 					<a href={'/contact?service=' + encodeURIComponent(title)} class="px-6 py-4 bg-brand-action text-white rounded-full w-full block text-center font-heading uppercase font-semibold tracking-widest">
 						Sign Up Now
 					</a>
-					<p class="text-lead font-heading my-8">{fmt.format(price)}/{term}</p>
+					<p class="text-lead font-heading my-8">
+						{servicePriceFormatted(price, term)}
+					</p>
 					{ subnav && 
 					<nav class="flex flex-col">
 						{subnav.map(i => 
@@ -66,23 +84,8 @@ const fmt = new Intl.NumberFormat('en-CA', {
 						)}
 					</nav>
 					}
-					</div>
 				</div>
-				<div class="prose">
-					{ services &&
-						<h2>Included</h2>
-						<div class="flex space-x-6">
-							{ services.map(service => 
-								<a href={service.url} class="p-8 shadow-lg flex-1">
-									<h3>{service.frontmatter.title}</h3>
-									<p>{service.frontmatter.description}</p>
-								</a>
-							) }
-						</div>
-					}
-					<slot></slot>
-				</div>
-			</main>
-		</article>
-	</div>
+			</div>
+		</div>
+	</article>
 </Plain>

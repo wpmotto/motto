@@ -3,6 +3,7 @@ sku: wp-maintenance
 title: 'WordPress Maintenance Service'
 layout: "../../layouts/Service.astro"
 keyword: 'wordpress maintenance service'
+description: If your WordPress site is critical to your business, it should be maintained by WordPress experts. We maintain your WordPress website so you can have peace of mind and no hassle.
 price: 160
 term: 'month'
 included: 

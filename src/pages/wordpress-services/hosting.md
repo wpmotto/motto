@@ -2,7 +2,7 @@
 sku: wp-hosting
 title: Hosting with Kinsta
 layout: "../../layouts/Service.astro"
-description: PressMaster Uptime hosts your website on a fine-tuned infrastructure specifically designed to keep your WordPress website performing at maximum capacity. Speed and security are our priorities.
+description: Host your WordPress site on a premium Google-recommended WordPress server. Take advantage of a managed server fine-tuned for WordPress so your site can perform at maximum speed and security.
 price: 35
 term: month
 ---
