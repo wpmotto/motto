@@ -2,11 +2,24 @@
 import Plain from '../layouts/Plain.astro';
 import { servicePriceFormatted } from '../lib/helpers';
 const services = await Astro.glob("../pages/wordpress-services/*.md");
+const order = [
+    'wp-maintenance',
+    'wp-console',
+    'wp-accessibility',
+    'wp-pagespeed',
+    'wp-security',
+    'wp-insights',
+    'wp-seo',
+    'wp-updates',
+]
 ---
 <Plain>
     <div class="wrapper">
         <ul class="grid grid-cols-3 gap-12">
-            {services.map( ({url, frontmatter}) => 
+            {services
+            .filter(i => order.includes(i.frontmatter.sku))
+            .sort((a, b) =>  order.indexOf(a.frontmatter.sku) > order.indexOf(b.frontmatter.sku) ? 1 : -1 )
+            .map( ({url, frontmatter}) => 
             <li>
                 <a href={url} class="block shadow-lg p-8 rounded-lg">
                     {frontmatter.title}

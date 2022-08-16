@@ -21,25 +21,6 @@ subnav:
 - Error-monitoring and pro-active fixes
 - Defend against brute force attacks
 
-## OPTIMIZED WORDPRESS HOSTING
-Dedicated hosting fine-tuned specifically for WordPress.
-
-One of the reasons WordPress is so popular is that it’s easily hosted. If you have PHP, MySQL and a web server, you’re up and running.
-
-The problem is once your site starts to get some real traffic it can start to come to a crawl. With the traffic comes exposure, to regular visitors and hackers. Now at a critical time in your site’s evolution where you need it performing at its best, it’s at its worst.
-
-This is where the difference between cheap shared web hosting and a dedicated WordPress hosting solution come in.
-
-Our hosting architecture is built on top of Google’s own cloud with best in class speed and security and networking (traffic is served on their premium tier network). We use only the latest versions of PHP and MySQL for huge speed and security improvements. By default we implement server side caching for near instant page loads. The web server is also fine-tuned to deliver files and pages as fast as possible.
-
-We even pro-actively monitor the backend of your site, such as your database, for potential bottlenecks that may arise.
-
-We’ll even check with you to see where most of your traffic comes from and set up your server as close to that location as possible squeeze even more speed out of every page load.
-
-- Periodic restart of PHP
-- Database optimizations and tuning
-- Log monitoring
-
 ## DAILY FULL BACKUPS
 
 Anything can happen at any time. That's why we back your entire site up everyday.
@@ -105,11 +86,10 @@ A content delivery network (CDN) can be used to deliver your static assets (imag
 
 Most providers charge for this service, but since this is what we consider standard practice for a website – we include it for free.
 
----
 
 PressMaster Security addresses the most common WordPress vulnerabilities and causes of downtime in the safest manner possible. This, coupled with Uptime hosting, provides minimal if any downtime.
 
-## UNLIMITED SUPPORT
+## Immediate SUPPORT
 
 Sometimes updates can be risky if you're not an experienced developer. We've got you covered.
 

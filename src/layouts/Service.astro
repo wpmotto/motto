@@ -34,7 +34,7 @@ const headerLink = ( heading ) => {
 ---
 <Plain>
 	<div class="wrapper">
-		<a href="/wordpress-services">← WordPress Services</a>
+		<a href="/wordpress-services" class="uppercase text-xs text-slate-600 tracking-widest font-heading">← WordPress Services</a>
 	</div>		  
 	<article>
 	<PageHeader>
@@ -49,7 +49,7 @@ const headerLink = ( heading ) => {
 			{ services &&
 			<div class="mb-12">
 					<h2 class="font-heading h4 uppercase text-slate-300 tracking-widest font-semibold">Also Included</h2>
-					<div class="border-2 border-slate-200 p-3 rounded-lg shadow-md">
+					<div class="border-2 border-slate-200 p-3 rounded-lg shadow-md ">
 						{ services.map(service => 
 							<a href={service.url} class="p-8 grid grid-cols-2 text-slate-700 odd:bg-slate-50 rounded-md hover:bg-slate-100">
 								<span class="flex flex-col">
@@ -65,22 +65,22 @@ const headerLink = ( heading ) => {
 					</div>
 				</div>
 				}
-					<div class="prose mt-12">
+					<div class="prose mt-12 prose-headings:font-heading prose-headings:text-slate-700 prose-headings:uppercase prose-a:text-brand-midblue">
 						<slot></slot>
 					</div>
 				</div>
 				<div class="w-96">
-					<div class="bg-slate-100 rounded-lg p-4 sticky top-8 shadow-lg">
+					<div class="bg-slate-100 ring ring-white rounded-lg p-4 sticky top-8 shadow-xl">
 					<a href={'/contact?service=' + encodeURIComponent(title)} class="px-6 py-4 bg-brand-action text-white rounded-full w-full block text-center font-heading uppercase font-semibold tracking-widest">
 						Sign Up Now
 					</a>
-					<p class="text-lead font-heading my-8">
+					<p class="text-lead font-heading my-8 text-center">
 						{servicePriceFormatted(price, term)}
 					</p>
 					{ subnav && 
 					<nav class="flex flex-col">
 						{subnav.map(i => 
-							<a class="block odd:bg-slate-200 rounded px-4 py-3" href={headerLink(i)}>{i}</a>
+							<a class="block odd:bg-slate-200 hover:bg-slate-300 focus:bg-slate-300 rounded px-4 py-3 uppercase tracking-wider text-sm font-heading text-slate-600 hover:text-slate-700" href={headerLink(i)}>{i}</a>
 						)}
 					</nav>
 					}
