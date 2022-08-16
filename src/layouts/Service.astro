@@ -78,9 +78,9 @@ const headerLink = ( heading ) => {
 						{servicePriceFormatted(price, term)}
 					</p>
 					{ subnav && 
-					<nav class="flex flex-col">
+					<nav class="flex flex-col text-xs">
 						{subnav.map(i => 
-							<a class="block odd:bg-slate-200 hover:bg-slate-300 focus:bg-slate-300 rounded px-4 py-3 uppercase tracking-wider text-sm font-heading text-slate-600 hover:text-slate-700" href={headerLink(i)}>{i}</a>
+							<a class="block odd:bg-slate-200 hover:bg-slate-300 focus:bg-slate-300 rounded px-4 py-3 uppercase tracking-wider font-heading text-slate-600 hover:text-slate-700" href={headerLink(i)}>{i}</a>
 						)}
 					</nav>
 					}

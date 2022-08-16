@@ -1,10 +1,14 @@
 ---
 sku: wp-seo
 title: WordPress SEO Service
+layout: "../../layouts/Service.astro"
 keyword: wordpress seo service
 description: PressMaster Uptime hosts your website on a fine-tuned infrastructure specifically designed to keep your WordPress website performing at maximum capacity. Speed and security are our priorities.
 price: 250
 term: month
+suggested: 
+    - wp-console
+    - wp-pagespeed
 ---
 
 # WordPress Hosting

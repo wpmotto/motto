@@ -1,4 +1,5 @@
 ---
+import Card from "./Card.astro";
 const services = await Astro.glob("../pages/wordpress-services/*.md");
 const featured = [
     'wp-pagespeed', 
@@ -13,11 +14,10 @@ const featured = [
         .filter(i => featured.includes(i.frontmatter.sku))
         .sort((a, b) =>  featured.indexOf(a.frontmatter.sku) > featured.indexOf(b.frontmatter.sku) ? 1 : -1 )
         .map(service => 
-        <a href={service.url} class="block text-center p-8 shadow-lg rounded-lg bg-gradient-to-b to-brand-mint from-white ring-2 ring-brand-mint hover:from-brand-mint transition hover:shadow-xl hover:-translate-y-3">
-            <img class="h-52" height="208" width="309" src={`/assets/svgs/services/${service.frontmatter.sku}.svg`}  alt={service.frontmatter.title} />
-            <h2 class="font-heading leading-tight font-semibold text-h4 text-brand-action mb-6">{service.frontmatter.title}</h2>
+        <Card href={service.url} title={service.frontmatter.title}>
+            <img slot="image" class="h-52" height="208" width="309" src={`/assets/svgs/services/${service.frontmatter.sku}.svg`}  alt={service.frontmatter.title} />
             <p class="text-slate-600 text-sm">{service.frontmatter.description}</p>
-        </a>
+        </Card>
     )}
     </div>
     <p class="text-center my-12">

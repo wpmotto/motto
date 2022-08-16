@@ -1,5 +1,6 @@
 ---
 import Plain from '../layouts/Plain.astro';
+import Card from "../components/Card.astro";
 import { servicePriceFormatted } from '../lib/helpers';
 const services = await Astro.glob("../pages/wordpress-services/*.md");
 const order = [
@@ -7,31 +8,31 @@ const order = [
     'wp-console',
     'wp-accessibility',
     'wp-pagespeed',
-    'wp-security',
     'wp-insights',
-    'wp-seo',
     'wp-updates',
 ]
 ---
 <Plain>
     <div class="wrapper">
-        <ul class="grid grid-cols-3 gap-12">
+        <div class="text-center mx-auto max-w-xl my-20">
+            <h1 class="text-h1 font-heading font-bold">WordPress Services</h1>
+            <p class="text-lead">If you're a business using WordPress, your primary focus should still be your business. Ours is WordPress. Here's how we can service your WordPress website.</p>
+        </div>
+        <div class="grid grid-cols-3 gap-12">
             {services
             .filter(i => order.includes(i.frontmatter.sku))
             .sort((a, b) =>  order.indexOf(a.frontmatter.sku) > order.indexOf(b.frontmatter.sku) ? 1 : -1 )
             .map( ({url, frontmatter}) => 
-            <li>
-                <a href={url} class="block shadow-lg p-8 rounded-lg">
-                    {frontmatter.title}
-					<img class="h-32" src={`/assets/svgs/services/${frontmatter.sku}.svg`} />
+                <Card title={frontmatter.title} href={url}>
+                    <img slot="image" class="h-52" height="208" width="309" src={`/assets/svgs/services/${frontmatter.sku}.svg`} />
+                    <p class="text-sm text-slate-700">{ frontmatter.description }</p>
                     { frontmatter.price &&
-                        <div>    
-                            { servicePriceFormatted(frontmatter.price, frontmatter.term) }
-                        </div>
+                    <div class="text-lg font-heading my-6">
+                        { servicePriceFormatted(frontmatter.price, frontmatter.term) }
+                    </div>
                     }
-                </a>
-            </li>
+                </Card>
             )}
-        </ul>
+        </div>
     </div>
 </Plain>
