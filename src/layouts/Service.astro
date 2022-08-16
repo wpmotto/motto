@@ -38,20 +38,20 @@ const headerLink = ( heading ) => {
 	</div>		  
 	<article>
 	<PageHeader>
-		<h1 class="text-h1 font-heading font-bold leading-tight">{title}</h1>
+		<h1 class="title">{title}</h1>
 		{ description && 
 			<p class="lead font-heading font-light">{description}</p>
 		}
 		<img slot="graphic" class="max-w-full max-h-96" src={`/assets/svgs/services/${sku}.svg`} />
 	</PageHeader>
-	<div class="wrapper flex justify-between gap-12 mt-12">
-		<div class="max-w-xl">
+	<div class="wrapper flex flex-col md:flex-row justify-between gap-12 -mt-20 md:mt-12">
+		<div class="md:max-w-xl order-2 md:order-1">
 			{ services &&
 			<div class="mb-12">
 					<h2 class="font-heading h4 uppercase text-slate-300 tracking-widest font-semibold">Also Included</h2>
 					<div class="border-2 border-slate-200 p-3 rounded-lg shadow-md ">
 						{ services.map(service => 
-							<a href={service.url} class="p-8 grid grid-cols-2 text-slate-700 odd:bg-slate-50 rounded-md hover:bg-slate-100">
+							<a href={service.url} class="p-8 grid grid-cols-1 sm:grid-cols-2 gap-8 text-slate-700 odd:bg-slate-50 rounded-md hover:bg-slate-100">
 								<span class="flex flex-col">
 									<h3 class="font-heading">{service.frontmatter.title}</h3>
 									<p class="text-slate-400">{servicePriceFormatted(service.frontmatter.price, service.frontmatter.term)} value</p>
@@ -65,12 +65,12 @@ const headerLink = ( heading ) => {
 					</div>
 				</div>
 				}
-					<div class="prose mt-12 prose-headings:font-heading prose-headings:text-slate-700 prose-headings:uppercase prose-a:text-brand-midblue">
-						<slot></slot>
-					</div>
-				</div>
-				<div class="w-96">
-					<div class="bg-slate-100 ring ring-white rounded-lg p-4 sticky top-8 shadow-xl">
+			<div class="mx-auto mt-12 md:mt-0 content">
+				<slot></slot>
+			</div>
+		</div>
+		<div class="md:w-96 order-1 md:order-2">
+			<div class="bg-slate-100 ring ring-white rounded-lg p-4 sticky top-8 shadow-xl">
 					<a href={'/contact?service=' + encodeURIComponent(title)} class="px-6 py-4 bg-brand-action text-white rounded-full w-full block text-center font-heading uppercase font-semibold tracking-widest">
 						Sign Up Now
 					</a>

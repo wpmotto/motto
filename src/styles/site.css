@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .wrapper {
-	@apply px-8 mx-auto max-w-screen-xl;
+	@apply px-8 md:px-12 mx-auto max-w-screen-xl;
 }
 
 .lng {
@@ -16,4 +16,12 @@
 
 .text-link {
 	@apply text-brand-action underline underline-offset-2;
+}
+
+.content {
+	@apply prose prose-headings:font-heading prose-headings:text-slate-700 prose-headings:uppercase prose-a:text-brand-midblue lg:prose-xl;	
+}
+
+.title {
+	@apply text-h2 md:text-h1 font-heading font-bold leading-tight text-brand-dark;
 }

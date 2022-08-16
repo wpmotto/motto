@@ -8,7 +8,7 @@ const featured = [
 ]
 ---
 <section>
-    <h1 class="my-12 text-brand-dark font-heading font-extrabold text-h1 text-center">Our WordPress Services</h1>
+    <h1 class="my-12 title text-center">Our WordPress Services</h1>
     <div class="grid grid-cols-1 md:grid-cols-3 place-content-center gap-12">
     {services
         .filter(i => featured.includes(i.frontmatter.sku))
@@ -21,6 +21,6 @@ const featured = [
     )}
     </div>
     <p class="text-center my-12">
-        <a href="/wordpress-services">More WordPress Services ➝</a>
+        <a href="/wordpress-services" class="text-link">More WordPress Services ➝</a>
     </p>
 </section>

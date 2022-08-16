@@ -9,6 +9,13 @@ function ErrorText({error}) {
 
 export default function ContactForm() {
 
+    let params = null;
+    if (typeof window !== "undefined") {
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        params = Object.fromEntries(urlSearchParams.entries());
+    }
+
+    
     const [validation, setValidation] = useState(false);
 
     const submit = async (event) => {
@@ -55,19 +62,9 @@ export default function ContactForm() {
                     { validation?.error?.email && 
                         <ErrorText error={validation?.error?.email} />
                     }
-
                 </div>
                 <div className="col-span-full">
-                    <select className="w-full" name="service">
-                        <option>General Inquiry</option>
-                        <option>WordPress Maintenance</option>
-                        <option>WordPress Optimization</option>
-                        <option>WordPress Accessibility</option>
-                        <option>WordPress Block Development</option>
-                    </select>
-                    { validation?.error?.service && 
-                        <ErrorText error={validation?.error?.service} />
-                    }
+                    <input type="text" name="service" placeholder="Service Inquiry" className="w-full" value={params?.service}/>
                 </div>
                 <div className="col-span-full">
                     <textarea rows="8" className="w-full" name="message" placeholder="Your Message"></textarea>
@@ -81,7 +78,7 @@ export default function ContactForm() {
                             {validation.message}
                         </div>
                     )}
-                    <button className="bg-brand-action px-6 py-3 rounded-full min-w-[300px]">Send</button>
+                    <button className="bg-brand-action px-6 py-3 rounded-full min-w-[300px] text-white">Send</button>
                 </div>
             </form>
 	);

@@ -2,13 +2,15 @@
 import Shape from '../svgs/HeroShape.svg.astro';
 ---
 <div class="bg-gradient-to-b from-white via-brand-mint to-brand-skyblue flex flex-col justify-center relative overflow-hidden max-w-[2400px] mx-auto">
-    <header class="wrapper grid grid-cols-1 md:grid-cols-2 gap-12 z-10 h-[600px] my-12 place-items-center">
-        <div class="space-y-4">
-            <slot/>
+    <header class="wrapper grid grid-cols-1 md:grid-cols-2 gap-12 z-10 min-h-[400px] pb-[100px] my-12 place-items-center w-full">
+        <div>
+            <div class="space-y-4 max-w-[50ch]">
+                <slot/>
+            </div>
         </div>
         <div class="w-full h-full flex items-center justify-center">
             <slot name="graphic"/>
         </div>
     </header>
-    <Shape class="w-[200vw] lg:w-full absolute bottom-0 z-0"/>
+    <Shape class="w-[200vw] md:w-[120vw] lg:w-full absolute bottom-0 z-0"/>
 </div>

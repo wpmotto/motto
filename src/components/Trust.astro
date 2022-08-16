@@ -17,7 +17,7 @@ const partners = [
 ---
 <div class="mt-20">
     <div class="wrapper relative z-10 -mb-48">
-        <div class="bg-white shadow-lg rounded-lg p-16 tex-center max-w-4xl mx-auto">
+        <div class="bg-white shadow-lg rounded-lg p-12 md:p-16 tex-center max-w-4xl mx-auto">
             <h2 class="text-center uppercase tracking-widest text-slate-400 font-heading mb-8 pb-4 border-b border-slate-200">
                 Companies that trust us
             </h2>	
@@ -30,12 +30,12 @@ const partners = [
     </div>
     <div class="bg-gradient-to-b from-brand-skyblue pt-[200px] to-brand-dark relative">
         <Curve class="w-screen absolute -top-1 z-0"/>
-        <div class="text-white text-center max-w-2xl mx-auto py-20">
+        <div class="wrapper text-white text-center max-w-2xl py-20">
             <h2 class="text-center uppercase tracking-widest text-blue-100 font-heading mb-8 pb-4 border-b border-blue-100/30">
                 Our Partners
             </h2>	
 
-            <div class="flex justify-center gap-8 my-12">
+            <div class="grid grid-cols-2 md:flex justify-center gap-8 my-12">
                 {partners.map(logo => 
                 <div class="text-center">
                     <img title={logo.alt} class="inline-block h-12 w-24 object-contain grayscale invert" src={`/partners/${logo.src}`} alt={logo.alt} />

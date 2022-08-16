@@ -7,8 +7,8 @@ const posts = await getRecentPosts(5);
 ---
 <footer class="py-20">
     <div class="wrapper">
-        <div class="grid grid-cols-1 md:grid-cols-4">
-            <div class="col-span-2">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-2 row-start-2 md:row-start-1">
                 <h1 class="inline-block w-32">
                     <Logo/>
                 </h1>
@@ -25,11 +25,13 @@ const posts = await getRecentPosts(5);
                     Reach out or follow us ➝
                 </a>
                 <h2 class="mt-12 h4 uppercase text-slate-400 tracking-widest font-heading font-bold">Legal</h2>
-                <p><a href="/privacy">Privacy Policy</a></p>
-                <p class="text-sm">Copyright {(new Date).getFullYear()}, Motto Design Studio Inc., All Rights Reserved</p>
+                <div class="text-sm text-slate-500 space-y-4">
+                    <p><a href="/privacy">Privacy Policy</a></p>
+                    <p>Copyright {(new Date).getFullYear()}, Motto Design Studio Inc., All Rights Reserved</p>
+                </div>
             </div>
             <div class="col-span-2">
-                <h2 class="text-right h4 uppercase text-slate-400 tracking-widest font-heading font-bold mb-6">Latest From the Blog</h2>
+                <h2 class="md:text-right h4 uppercase text-slate-400 tracking-widest font-heading font-bold mb-6">Latest From the Blog</h2>
                 <ul aria-label="Blog post list">
                     {posts.map(({ title, date }) => (
                     <li class="flex odd:bg-slate-50 rounded p-4 text-slate-700 items-end justify-between">
@@ -38,7 +40,7 @@ const posts = await getRecentPosts(5);
                     </li>
                     ))}
                 </ul>
-                <div class="text-right mt-6">
+                <div class="md:text-right mt-6">
                     <a href="/blog" class="inline-block text-brand-midblue underline underline-offset-4">
                         Read the Blog for all things WordPress ➝
                     </a>

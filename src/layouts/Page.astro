@@ -17,7 +17,7 @@ const { content: { image, title, description } } = Astro.props as Props;
 <Plain>
 	<article class="wrapper content">
 		<header class="text-center">
-			<h1 class="text-h1 font-heading font-bold">{title}</h1>
+			<h1 class="title">{title}</h1>
 			{image && (
 				<img
 					width="720"

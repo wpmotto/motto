@@ -1,8 +1,8 @@
 ---
 const { href, title } = Astro.props;
 ---
-<a href={href} class="text-center p-8 shadow-lg rounded-lg bg-gradient-to-b to-brand-mint from-white ring-4 ring-brand-midblue/10 hover:from-brand-mint transition hover:shadow-xl hover:-translate-y-3 flex flex-col justify-between">
-    <div class="mb-6">
+<a href={href} class="text-center p-8 shadow-lg rounded-lg bg-gradient-to-b to-brand-mint from-white ring-inset ring-4 ring-brand-midblue/10 hover:from-brand-mint transition hover:shadow-xl hover:-translate-y-3 flex flex-col">
+    <div class="mb-6 flex flex-col items-center">
         <slot name="image"></slot>
         <h2 class="font-heading leading-tight font-semibold text-h4 text-brand-action mt-6">{title}</h2>
     </div>
