@@ -5,7 +5,7 @@ import Footer from "../components/Footer.astro";
 import i18next from "i18next";
 
 const url = new URL(Astro.url.pathname, 'https://motto.ca'); //Astro.site
-const wpMetaRequest = await fetch(`${url.origin}/wp-json/rankmath/v1/getHead?url=${url.href}`);
+const wpMetaRequest = await fetch(`https://motto.ca/wp-json/rankmath/v1/getHead?url=${url.href}`);
 const meta = await wpMetaRequest.json();
 ---
 <html lang={i18next.language} class="scroll-smooth">
