@@ -1,0 +1,25 @@
+---
+import Plain from '../layouts/Plain.astro';
+import { social, business } from '../lib/site';
+import { Icon } from 'astro-icon';
+import ContactForm from '../components/ContactForm';
+---
+<Plain>
+	<div class="max-w-xl mx-auto pb-20">
+		<h1 class="font-heading font-bold text-h1 my-12 text-center">Contact Us</h1>
+		<p class="flex justify-center space-x-6 text-lead">
+			<a class="text-brand-action underline underline-offset-2" href={`mailto:${business.email}`}>{business.email}</a>
+			<span class="text-slate-300">/</span>
+			<a class="text-brand-action underline underline-offset-2" href={`tel:${business.phone}`}>{business.phone}</a>
+		</p>
+		<ContactForm client:visible/>
+		<ul class="flex justify-center space-x-4 my-6 text-slate-500">
+			{ social.map(i => <li><a href={i.link} title={i.title}>
+				{ i.name === 'wpvip' ? 
+					<Icon class="w-8 h-8" name={i.name} title={i.title}/> : 
+					<Icon class="w-8 h-8" pack="fa" name={i.name} title={i.title}/>
+				}
+			</a></li> ) }
+		</ul>
+	</div>
+</Plain>

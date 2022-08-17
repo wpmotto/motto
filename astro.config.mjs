@@ -2,7 +2,6 @@ import { defineConfig } from 'astro/config';
 import preact from '@astrojs/preact';
 import tailwind from "@astrojs/tailwind";
 import astroI18next from "astro-i18next";
-import mdx from "@astrojs/mdx";
 
 export default defineConfig({
   experimental: {
@@ -18,7 +17,6 @@ export default defineConfig({
         supportedLngs: ["en", "fr"],
       },
     }),
-    mdx()
   ],
   vite: {
     ssr: {
