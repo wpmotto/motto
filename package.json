@@ -10,7 +10,6 @@
   },
   "devDependencies": {
     "@astrojs/cloudflare": "^1.0.1",
-    "@astrojs/image": "^0.3.0",
     "@astrojs/mdx": "^0.5.0",
     "@astrojs/preact": "^0.5.2",
     "@astrojs/tailwind": "^0.2.4",
@@ -21,7 +20,6 @@
   },
   "dependencies": {
     "astro-i18next": "~1.0.0-beta.3",
-    "astro-icon": "^0.7.3",
     "preact": "^10.7.3"
   }
 }

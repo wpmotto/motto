@@ -3,7 +3,6 @@ import preact from '@astrojs/preact';
 import tailwind from "@astrojs/tailwind";
 import cloudflare from '@astrojs/cloudflare';
 // import astroI18next from "astro-i18next";
-import image from "@astrojs/image";
 import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
@@ -19,10 +18,6 @@ export default defineConfig({
   //     supportedLngs: ["en", "fr"]
   //   }
   // }),
-  image(), mdx()],
-  vite: {
-    ssr: {
-      external: ["svgo"]
-    }
-  }
+  mdx()
+  ],
 });
