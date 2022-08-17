@@ -1,10 +1,16 @@
 ---
-import Plain from '../layouts/Plain.astro';
-import { social } from '../lib/site';
+import Plain from '../../layouts/Plain.astro';
+import { social } from '../../lib/site';
 import { Icon } from 'astro-icon';
+import i18next from "i18next";
+
+export function getStaticPaths() {
+  return [ { params: { lang: 'fr' } } ];
+}
+i18next.changeLanguage("fr");
 ---
 <Plain>
-	<h1 class="title my-12 text-center">About Us</h1>
+	<h1 class="title my-12 text-center">À Propos</h1>
 	<div class="grid grid-cols-2 gap-12 my-20">
 		<div class="text-right">
 			<h2 class="text-h4 font-heading">Follow Us Elsewhere</h2>
