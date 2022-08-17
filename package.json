@@ -18,7 +18,6 @@
   },
   "dependencies": {
     "astro-i18next": "github:wpmotto/astro-i18next#develop",
-    "astro-icon": "^0.7.3",
     "preact": "^10.7.3"
   }
 }

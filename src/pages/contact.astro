@@ -1,7 +1,7 @@
 ---
 import Plain from '../layouts/Plain.astro';
 import { social, business } from '../lib/site';
-import { Icon } from 'astro-icon';
+// import { Icon } from 'astro-icon';
 import ContactForm from '../components/ContactForm';
 ---
 <Plain>
@@ -14,12 +14,12 @@ import ContactForm from '../components/ContactForm';
 		</p>
 		<ContactForm client:visible/>
 		<ul class="flex justify-center space-x-4 my-6 text-slate-500">
-			{ social.map(i => <li><a href={i.link} title={i.title}>
+			<!-- { social.map(i => <li><a href={i.link} title={i.title}>
 				{ i.name === 'wpvip' ? 
 					<Icon class="w-8 h-8" name={i.name} title={i.title}/> : 
 					<Icon class="w-8 h-8" pack="fa" name={i.name} title={i.title}/>
 				}
-			</a></li> ) }
+			</a></li> ) } -->
 		</ul>
 	</div>
 </Plain>
