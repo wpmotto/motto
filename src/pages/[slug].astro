@@ -1,6 +1,16 @@
 ---
-import { getPost } from '../lib/api';
+import { getAllPostsWithSlugs, getPost } from '../lib/api';
 import Plain from '../layouts/Plain.astro';
+
+export async function getStaticPaths() {
+  const postsWithSlugs = await getAllPostsWithSlugs();
+  return postsWithSlugs.edges.map(({ node }) => {
+    return {
+      params: { slug: node.slug },
+    };
+  });
+}
+
 const { slug } = Astro.params;
 const post = await getPost(slug);
 ---

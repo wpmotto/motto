@@ -13,8 +13,7 @@
     "@astrojs/tailwind": "^0.2.4",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/typography": "^0.5.4",
-    "astro": "^1.0.1",
-    "wrangler": "^2.0.26"
+    "astro": "^1.0.1"
   },
   "dependencies": {
     "astro-i18next": "github:wpmotto/astro-i18next#develop",
