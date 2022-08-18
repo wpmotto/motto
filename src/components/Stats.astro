@@ -1,30 +1,31 @@
 ---
+import { t } from "i18next";
 const stats = [
     {
-        unit: 'YRS',
+        unit: t("home.stats.business.units"),
         scalar: 25,
-        description: 'in Business'
+        description: t("home.stats.business.description")
     },
     {
         unit: '+',
         scalar: 200,
-        description: 'Maintained WordPress Installations'
+        description: t("home.stats.maintained.description")
     },
     {
-        unit: 'M',
+        unit: t("home.stats.hosted.units"),
         scalar: 1,
-        description: 'Hosted WordPress Visitors per month'
+        description: t("home.stats.hosted.description")
     },
     {
         unit: '%',
         scalar: 100,
-        description: 'Canadian Developers at Your Service'
+        description: t("home.stats.devs.description")
     },
 ];
 ---
 <div class="text-center px-12 py-20">
     <div class="wrapper">
-        <h1 class="sr-only">Motto WordPress Statistics</h1>
+        <h1 class="sr-only">{t("home.stats.title")}</h1>
         <div class="flex flex-col md:flex-row gap-8 justify-center items-center flex-wrap">
             {stats.map(stat => 
             <div class="w-60">
