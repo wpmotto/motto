@@ -31,7 +31,7 @@ const partners = [
             </h2>	
             <div class="flex place-content-center flex-wrap gap-8">
                 {logos.map(logo => 
-                    <img title={logo.alt} class="inline-block w-36 object-contain grayscale mix-blend-multiply" src={logo.src} alt={logo.alt} />
+                    <img title={logo.alt} class="inline-block w-36 object-contain grayscale mix-blend-multiply" src={logo.src} alt={logo.alt} width={logo.width} width={logo.height} loading="lazy"/>
                 )}
             </div>
         </div>        
@@ -46,7 +46,7 @@ const partners = [
             <div class="grid grid-cols-2 md:flex justify-center gap-8 my-12">
                 {partners.map(logo => 
                 <div class="text-center">
-                    <img title={logo.alt} class="inline-block h-12 w-24 object-contain grayscale invert" src={logo.src} alt={logo.alt} />
+                    <img title={logo.alt} class="inline-block h-12 w-24 object-contain grayscale invert" src={logo.src} alt={logo.alt} width={logo.width} width={logo.height} loading="lazy" />
                 </div>
                 )}
             </div>

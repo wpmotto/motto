@@ -15,7 +15,7 @@ const featured = [
         .sort((a, b) =>  featured.indexOf(a.frontmatter.sku) > featured.indexOf(b.frontmatter.sku) ? 1 : -1 )
         .map(service => 
         <Card href={service.url} title={service.frontmatter.title}>
-            <img slot="image" class="h-52" height="208" width="309" src={`/assets/svgs/services/${service.frontmatter.sku}.svg`}  alt={service.frontmatter.title} />
+            <img slot="image" class="h-52" height="208" width="309" src={`/assets/svgs/services/${service.frontmatter.sku}.svg`} alt={service.frontmatter.title} loading="lazy" />
             <p class="text-slate-600 text-sm">{service.frontmatter.description}</p>
         </Card>
     )}
