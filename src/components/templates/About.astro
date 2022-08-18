@@ -1,0 +1,44 @@
+---
+import { Trans } from "astro-i18next/components";
+import { t } from "i18next";
+import i18next from "i18next";
+import Plain from '../../layouts/Plain.astro';
+import { social } from '../../lib/site';
+import { Icon } from 'astro-icon';
+
+const { title, lang } = Astro.props;
+
+i18next.changeLanguage(lang as string);
+---
+<Plain>
+    <h1 class="title my-12 text-center">{title}</h1>
+    <div class="grid grid-cols-2 gap-12 my-20">
+        <div class="text-right">
+            <h2 class="text-h4 font-heading">
+                {t('about.follow')}
+            </h2>
+            <ul class="flex justify-end space-x-4 my-6 text-slate-500">
+                { social.map(i => <li>
+                    { i.name === 'wpvip' ? 
+                        <Icon class="w-8 h-8" name={i.name} title={i.title}/> : 
+                        <Icon class="w-8 h-8" pack="fa" name={i.name} title={i.title}/>
+                    }
+                </li> ) }
+            </ul>
+                <p>
+                    <Trans i18nKey="about.review">
+                        If you've enjoyed our services, please <a class="text-link" href="https://g.page/r/CWsbwvmQNh1qEBE/review">review us on Google.</a>
+                    </Trans>
+                </p>
+                <hr class="my-12"/>
+                <p>
+                    <Trans i18nKey="about.jobs">
+                        If you're interested in <strong>working for us</strong>, please check our <a class="text-link" href="https://apply.workable.com/wpmotto/?lng=en">open positions</a>.
+                    </Trans>
+                </p>
+        </div>
+        <div class="prose max-w-[50ch]">
+            <slot></slot>
+        </div>
+    </div>
+</Plain>

@@ -9,7 +9,12 @@
     "resolveJsonModule": true,
     // Enable stricter transpilation for better output.
     "isolatedModules": true,
+    // Base directory to resolve non-absolute module names.
+    "baseUrl": "src",
     // Add type definitions for our Astro runtime.
     "types": ["astro/client"],
+    "paths": {
+      "templates:*": ["components/templates/*.astro"]
+    }
   }
 }

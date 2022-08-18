@@ -1,31 +1,12 @@
 ---
-layout: "../layouts/Plain.astro"
-title: About Us
 ---
-import { social } from '../lib/site';
-import { Icon } from 'astro-icon';
+import About from "templates:About";
 
-<h1 class="title my-12 text-center">About Us</h1>
-<div class="grid grid-cols-2 gap-12 my-20">
-	<div class="text-right">
-		<h2 class="text-h4 font-heading">Follow Us Elsewhere</h2>
-		<ul class="flex justify-end space-x-4 my-6 text-slate-500">
-			{ social.map(i => <li>
-				{ i.name === 'wpvip' ? 
-					<Icon class="w-8 h-8" name={i.name} title={i.title}/> : 
-					<Icon class="w-8 h-8" pack="fa" name={i.name} title={i.title}/>
-				}
-			</li> ) }
-		</ul>
-		<p>If you've enjoyed our services, please <a class="text-link" href="https://g.page/r/CWsbwvmQNh1qEBE/review">review us on Google.</a></p>
-		<hr class="my-12"/>
-		If you're interested in <strong>working for us</strong>, please check our <a class="text-link" href="https://apply.workable.com/wpmotto/?lng=en">open positions</a>.
-	</div>
-	<div class="prose max-w-[50ch]">
-		Motto started over 20 years ago as a Montreal based full creative web agency. We are proud to say, after all these years, many of the clients who worked with us then are still working with us today. We cannot think of a better testimonial than that. For a long time we specialized in e-commerce development with PHP frameworks like Magento.
+<About title="About Us" lang="en">
+Motto started over 20 years ago as a Montreal based full creative web agency. We are proud to say, after all these years, many of the clients who worked with us then are still working with us today. We cannot think of a better testimonial than that. For a long time we specialized in e-commerce development with PHP frameworks like Magento.
 
-		Surrounded by the rich culture of this great city, we find inspiration at every turn and look for ways to reflect this diversity in the work we do. What sets us apart is our belief that every request, email, or phone call should be and is handled by a real person.
+Surrounded by the rich culture of this great city, we find inspiration at every turn and look for ways to reflect this diversity in the work we do. What sets us apart is our belief that every request, email, or phone call should be and is handled by a real person.
 
-		As we grew so did the demand for smaller, more cost-effective websites. So we began producing custom WordPress sites for our growing client base. Many of our other customers required modern custom PHP applications during this period. This enabled us to bring some more modern workflows and technologies to the WordPress ecosystem. Our work grew more and more specialized in WordPress to meet the growing demand, until today where we’ve developed several products specifically to service this demographic.
-	</div>
-</div>
+As we grew so did the demand for smaller, more cost-effective websites. So we began producing custom WordPress sites for our growing client base. Many of our other customers required modern custom PHP applications during this period. This enabled us to bring some more modern workflows and technologies to the WordPress ecosystem. Our work grew more and more specialized in WordPress to meet the growing demand, until today where we’ve developed several products specifically to service this demographic.
+Motto started over 20 years ago as a Montreal based full creative web agency. We are proud to say, after all these years, many of the clients who worked with us then are still working with us today. We cannot think of a better testimonial than that. For a long time we specialized in e-commerce development with PHP frameworks like Magento.
+</About>

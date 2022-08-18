@@ -1,17 +1,19 @@
 ---
+import i18next, { t } from "i18next";
+import { localizePath } from "astro-i18next";
 import { LanguageSelector } from "astro-i18next/components";
 import Logo from "./Logo.astro";
 import MapleLeaf from "./MapleLeaf.astro";
 import QuizButton from "./QuizButton.astro";
 
 const navItems = [
-	{ url: '/wordpress-services', label: 'WordPress Services' },
-	{ url: '/about', label: 'About' },
+	{ url: '/wordpress-services', label: t('navigation.services') },
+	{ url: '/about', label: t('navigation.about') },
 ]
 ---
 <header class="wrapper pt-12 pb-2 flex flex-wrap items-center">
 	<h1 class="md:mr-12">
-		<a href="/" title="Motto Home" class="block w-36">
+		<a href="/" title={t('navigation.home')} class="block w-36">
 			<Logo />
 		</a>
 	</h1>
@@ -19,7 +21,7 @@ const navItems = [
 		<ul class="flex space-x-6 items-center justify-center bg-white w-full h-full md:bg-transparent">
 		{navItems.map(i => 
 			<li>
-				<a class="block" href={i.url}>{i.label}</a>
+				<a class="block" href={localizePath(i.url, i18next.language)}>{i.label}</a>
 			</li>
 		)}
 			<li>

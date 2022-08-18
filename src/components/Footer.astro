@@ -1,5 +1,7 @@
 ---
-// import { Icon } from 'astro-icon'
+import { t } from "i18next";
+import { Trans } from "astro-i18next/components";
+import { Icon } from 'astro-icon'
 import Logo from "./Logo.astro";
 import { getRecentPosts } from '../lib/api';
 import { social } from '../lib/site';
@@ -12,22 +14,26 @@ const posts = await getRecentPosts(5);
                 <h1 class="inline-block w-32">
                     <Logo/>
                 </h1>
-                <h2 class="mt-8 h4 uppercase text-slate-400 tracking-widest font-heading font-bold">Elsewhere</h2>
+                <h2 class="mt-8 h4 uppercase text-slate-400 tracking-widest font-heading font-bold">{t('footer.socialTitle')}</h2>
                 <ul class="flex space-x-4 my-6 text-slate-500">
-                    <!-- { social.map(i => <li>
+                    { social.map(i => <li>
                         { i.name === 'wpvip' ? 
                             <Icon class="w-8 h-8" name={i.name} title={i.title}/> : 
                             <Icon class="w-8 h-8" pack="fa" name={i.name} title={i.title}/>
                         }
-                    </li> ) } -->
+                    </li> ) }
                 </ul>
                 <a href="/contact" class="inline-block text-brand-midblue underline underline-offset-4">
-                    Reach out or follow us ➝
+                    {t('footer.socialAction')} ➝
                 </a>
-                <h2 class="mt-12 h4 uppercase text-slate-400 tracking-widest font-heading font-bold">Legal</h2>
+                <h2 class="mt-12 h4 uppercase text-slate-400 tracking-widest font-heading font-bold">{t('footer.legal.title')}</h2>
                 <div class="text-sm text-slate-500 space-y-4">
                     <p><a href="/privacy">Privacy Policy</a></p>
-                    <p>Copyright {(new Date).getFullYear()}, Motto Design Studio Inc., All Rights Reserved</p>
+                    <p>
+                        <Trans i18nKey="footer.legal.copyright">
+                            Copyright <span>{(new Date).getFullYear()}</span>, Motto Design Studio Inc., All Rights Reserved
+                        </Trans>
+                    </p>
                 </div>
             </div>
             <div class="col-span-2">

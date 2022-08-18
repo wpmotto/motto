@@ -1,16 +1,37 @@
 {
+    "navigation": {
+        "home": "Motto Home",
+        "services": "WordPress Services",
+        "about": "About",
+        "audit": "Free Audit"
+    },
+    "footer": {
+        "socialTitle": "Elsewhere",
+        "socialAction": "Reach out or follow us",
+        "legal": {
+            "title": "Legal légal",
+            "copyright": "Copyright <0>2022</0>, Motto Design Studio Inc., All Rights Reserved",
+            "navigation": {
+                "privacy": "Privacy Policy"
+            }
+        },
+        "blog": {
+            "title": "Latest From The Blog",
+            "action": "Read the Blog for all things WordPress"
+        }
+    },
+    "about": {
+        "follow": "Follow Us Elsewhere",
+        "review": "If you've enjoyed our services, please <0>review us on Google.</0>",
+        "jobs": "If you're interested in <0>working for us</0>, please check our <1>open positions</1>."
+    },
     "seo": {
         "title": "astro-i18next | Translate your Astro websites with i18next",
         "description": "astro-i18next is an astro integration of i18next + some utility components to help you translate your astro websites!",
         "ogTitle": "astro-i18next | Translate your Astro website with i18next!",
         "ogImageAlt": "A test tube placed on the lower left corner spreading out the astro-i18next text with bubbles and country flags."
     },
-    "navigation": {
-        "home": "Home",
-        "about": "About"
-    },
     "description": "An <0>astro</0> integration of <1>i18next</1> + some utility components to help you translate your astro websites!",
-    "about": "Created with love ❤️, cheese 🧀 and baguettes 🥖 during the <0>Astro hackathon</0> of April / May 2022 by <1>@yassinedoghri</1>.",
     "astroTitle": "Astro website",
     "i18nextTitle": "i18next website",
     "astroHackathonTitle": "Astro's showcase of astro-i18next",
