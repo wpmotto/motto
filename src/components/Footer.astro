@@ -1,6 +1,4 @@
 ---
-// import { Icon } from 'astro-icon'
-import Logo from "./Logo.astro";
 import { getRecentPosts } from '../lib/api';
 import { social } from '../lib/site';
 const posts = await getRecentPosts(5);
@@ -9,18 +7,7 @@ const posts = await getRecentPosts(5);
     <div class="wrapper">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div class="col-span-2 row-start-2 md:row-start-1">
-                <h1 class="inline-block w-32">
-                    <Logo/>
-                </h1>
                 <h2 class="mt-8 h4 uppercase text-slate-400 tracking-widest font-heading font-bold">Elsewhere</h2>
-                <ul class="flex space-x-4 my-6 text-slate-500">
-                    <!-- { social.map(i => <li>
-                        { i.name === 'wpvip' ? 
-                            <Icon class="w-8 h-8" name={i.name} title={i.title}/> : 
-                            <Icon class="w-8 h-8" pack="fa" name={i.name} title={i.title}/>
-                        }
-                    </li> ) } -->
-                </ul>
                 <a href="/contact" class="inline-block text-brand-midblue underline underline-offset-4">
                     Reach out or follow us ➝
                 </a>
@@ -49,4 +36,3 @@ const posts = await getRecentPosts(5);
         </div>
     </div>
 </footer>
-<script is:inline src="//embed.typeform.com/next/embed.js"></script>
