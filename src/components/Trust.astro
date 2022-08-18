@@ -1,18 +1,26 @@
 ---
 import Curve from '../svgs/curve.svg.astro';
+import LogoCcm from '../logos/ccm-logo.webp';
+import LogoAudicus from '../logos/audicus-logo.webp';
+import LogoMadInAmerica from '../logos/mad-in-america-logo.webp';
+import LogoKrispyKreme from '../logos/krispy-kreme-logo.webp';
+import PartnerGSuite from '../partners/google-g-suite-certified-logo.webp';
+import PartnerKinsta from '../partners/kinsta-logo.webp';
+import PartnerWpPlugin from '../partners/wordpress-plugin-logo.webp';
+import PartnerWpVip from '../partners/wordpress-vip-logo.webp';
 
 const logos = [
-	{alt: 'Mad in America', src: 'mad-in-america-logo.webp'},
-	{alt: 'Krispy Kreme Canada', src: 'krispy-kreme-logo.webp'},
-	{alt: 'CCM', src: 'ccm-logo.webp'},
-	{alt: 'Audicus', src: 'audicus-logo.webp'},
+	{alt: 'Mad in America', src: LogoMadInAmerica, width: 327, height: 32},
+	{alt: 'Krispy Kreme Canada', src: LogoKrispyKreme, width: 186, height: 32},
+	{alt: 'CCM', src: LogoCcm, width: 225, height: 32},
+	{alt: 'Audicus', src: LogoAudicus, width: 225, height: 32},
 ]
 
 const partners = [
-	{alt: 'Kinsta', src: 'kinsta-logo.webp'},
-	{ src: 'google-g-suite-certified-logo.webp', alt: 'Google GSuite Certified' },
-	{ src: 'wordpress-plugin-logo.webp', alt: 'WordPress Plugin Author' },
-	{ src: 'wordpress-vip-logo.webp	', alt: 'WordPress VIP Agency Partner' },
+	{ alt: 'Kinsta', src: PartnerKinsta, width: 758, height: 150 },
+	{ src: PartnerGSuite, alt: 'Google GSuite Certified', width: 150, height: 150 },
+	{ src: PartnerWpPlugin, alt: 'WordPress Plugin Author', width: 341, height: 150 },
+	{ src: PartnerWpVip, alt: 'WordPress VIP Agency Partner', width: 133, height: 150 },
 ]
 ---
 <div class="mt-20">
@@ -23,7 +31,7 @@ const partners = [
             </h2>	
             <div class="flex place-content-center flex-wrap gap-8">
                 {logos.map(logo => 
-                    <img title={logo.alt} class="inline-block w-36 object-contain grayscale mix-blend-multiply" src={`/logos/${logo.src}`} alt={logo.alt} />
+                    <img title={logo.alt} class="inline-block w-36 object-contain grayscale mix-blend-multiply" src={logo.src} alt={logo.alt} />
                 )}
             </div>
         </div>        
@@ -38,7 +46,7 @@ const partners = [
             <div class="grid grid-cols-2 md:flex justify-center gap-8 my-12">
                 {partners.map(logo => 
                 <div class="text-center">
-                    <img title={logo.alt} class="inline-block h-12 w-24 object-contain grayscale invert" src={`/partners/${logo.src}`} alt={logo.alt} />
+                    <img title={logo.alt} class="inline-block h-12 w-24 object-contain grayscale invert" src={logo.src} alt={logo.alt} />
                 </div>
                 )}
             </div>
