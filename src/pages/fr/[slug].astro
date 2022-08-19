@@ -4,7 +4,7 @@ import BlogPost from "templates:BlogPost";
 const { slug } = Astro.params;
 
 export async function getStaticPaths() {
-  const postsWithSlugs = await getAllPostsWithSlugs();
+  const postsWithSlugs = await getAllPostsWithSlugs(1000, 'fr');
   return postsWithSlugs.edges.map(({ node }) => {
     return {
       params: { slug: node.slug },

@@ -17,10 +17,10 @@ async function fetchAPI(query, { variables } = {}) {
   return json.data;
 }
 
-export async function getAllPostsWithSlugs(num = 10000) {
+export async function getAllPostsWithSlugs(num = 1000, lang = "en") {
   const data = await fetchAPI(`
     {
-        posts(first: ${num}) {
+        posts(first: ${num}, where: {wpmlLanguage: "${lang}"}) {
         edges {
           node {
             slug, title, date
