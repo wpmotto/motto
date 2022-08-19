@@ -1,0 +1,56 @@
+---
+import Plain from '../../layouts/Plain.astro';
+import Services from '../../components/Services.astro';
+import Audit from '../../components/Audit.astro';
+import Stats from '../../components/Stats.astro';
+import Trust from '../../components/Trust.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { t } from "i18next";
+import i18next from "i18next";
+
+let lang = "fr";
+
+i18next.changeLanguage(lang as string);
+---
+
+<Plain title="Homepage" description="Homepage">
+	<main>
+		<PageHeader>
+			<h1 class="title">{t("home.hero.title")}</h1>
+			<p class="font-heading text-lg font-light">{t("home.hero.subtitle")}</p>
+			<a href="/wordpress-services/maintenance" class="inline-block rounded-full px-6 py-3 border-4 border-brand-midblue text-brand-midblue font-semibold uppercase tracking-wide font-heading bg-brand-midblue/10 hover:bg-brand-midblue hover:text-white transition-colors">
+				{t("home.hero.button_txt")}
+			</a>
+			<lottie-player slot="graphic" src="/motto-lottie.json" background="transparent" speed="0.8" loop="" autoplay=""></lottie-player>
+		</PageHeader>
+
+		<div class="wrapper py-48 md:py-36 relative">
+			<div class="text-center max-w-full mx-auto w-[60ch]">
+				<p class="text-lg font-heading font-light">
+					{t("home.description.beginning")}
+					<strong class="text-brand">{t("home.description.strong_txt")}</strong>
+					{t("home.description.end")}	
+				</p>
+			</div>
+
+			<div class="animate-spin inline-flex justify-center items-center rounded-full bg-gradient-to-b from-brand to-brand-skyblue w-40 h-40 -z-1 absolute top-0 right-0 opacity-25 lg:opacity-100">
+			<span class="bg-white w-20 h-20 rounded-full"></span>
+			</div>
+			<div class="rounded-full h-10 w-10 -z-1 absolute top-24 right-48 bg-brand-dark opacity-25 lg:opacity-100">
+			</div>
+			<div class="rounded-full h-40 w-40 -z-1 absolute bottom-0 left-0 bg-brand-mint opacity-25 lg:opacity-100">
+			</div>
+			<div class="animate-spin inline-flex justify-center items-center rounded-full bg-gradient-to-b from-brand to-brand-skyblue w-20 h-20 -z-1 absolute mr-2 bottom-24 -left-12 opacity-25 lg:opacity-100">
+			<span class="bg-white w-10 h-10 rounded-full"></span>
+			</div>
+		</div>		
+		<div class="wrapper">
+			<Services/>
+		</div>
+		<Trust />
+		<Stats/>
+		<Audit/>
+	</main>
+</Plain>
+
+<script>import "@lottiefiles/lottie-player";</script>

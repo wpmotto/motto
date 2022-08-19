@@ -28,7 +28,7 @@ const posts = await getRecentPosts(5);
                 </a>
                 <h2 class="mt-12 h4 uppercase text-slate-400 tracking-widest font-heading font-bold">{t('footer.legal.title')}</h2>
                 <div class="text-sm text-slate-500 space-y-4">
-                    <p><a href="/privacy">Privacy Policy</a></p>
+                    <p><a href="/privacy">{t('footer.legal.navigation.privacy')}</a></p>
                     <p>
                         <Trans i18nKey="footer.legal.copyright">
                             Copyright <span>{(new Date).getFullYear()}</span>, Motto Design Studio Inc., All Rights Reserved
@@ -37,7 +37,7 @@ const posts = await getRecentPosts(5);
                 </div>
             </div>
             <div class="col-span-2">
-                <h2 class="md:text-right h4 uppercase text-slate-400 tracking-widest font-heading font-bold mb-6">Latest From the Blog</h2>
+                <h2 class="md:text-right h4 uppercase text-slate-400 tracking-widest font-heading font-bold mb-6">{t('footer.blog.title')}</h2>
                 <ul aria-label="Blog post list">
                     {posts.map(({ title, date }) => (
                     <li class="flex odd:bg-slate-50 rounded p-4 text-slate-700 items-end justify-between">
@@ -48,7 +48,7 @@ const posts = await getRecentPosts(5);
                 </ul>
                 <div class="md:text-right mt-6">
                     <a href="/blog" class="inline-block text-brand-midblue underline underline-offset-4">
-                        Read the Blog for all things WordPress ➝
+                        {t('footer.blog.action')} ➝
                     </a>
                 </div>
             </div>
