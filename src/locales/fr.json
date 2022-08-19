@@ -2,7 +2,7 @@
     "navigation": {
         "home": "Accueil de Motto",
         "about": "À propos",
-        "services": "Services WordPress",
+        "services": "Services <0>WordPress</0>",
         "audit": "Audit Gratuit"
     },
     "footer": {
