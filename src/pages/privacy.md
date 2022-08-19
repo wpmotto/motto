@@ -1,6 +1,6 @@
 ---
 title: 'Privacy Policy'
-layout: "../layouts/Page.astro"
+layout: "@layouts/Page.astro"
 ---
 
 ## Who we are

@@ -1,0 +1,27 @@
+---
+import { getPost } from '@lib/api';
+import Plain from '@layouts/Plain.astro';
+import i18next from "i18next";
+
+const { slug, lang } = Astro.params;
+i18next.changeLanguage(lang as string);
+
+const post = await getPost(slug);
+---
+<Plain title={post.title} description={post.title}>
+  <div class="wrapper">
+    <div>
+      <a href="/blog" class="uppercase text-xs text-slate-600 tracking-widest font-heading">← Back to the Blog</a>
+    </div>
+    <article class="py-12">
+      <header class="text-center mb-12 max-w-screen-lg mx-auto">
+        <h1 class="mb-5 text-h2 font-bold font-heading leading-tight text-brand-dark">{post.title}</h1>
+        <time>{post.date}</time>
+        {post.imageUrl && 
+          <img class="rounded-xl" src={post.imageUrl} alt={post.imageAlt} class="inline-block" />
+        }
+      </header>
+      <div class="content mx-auto" set:html={post.content} />
+    </article>
+  </div>
+</Plain>

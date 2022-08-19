@@ -2,10 +2,11 @@
 import { t } from "i18next";
 import { Trans } from "astro-i18next/components";
 import { Icon } from 'astro-icon'
-import Logo from "./Logo.astro";
-import { getRecentPosts } from '../lib/api';
-import { social } from '../lib/site';
-const posts = await getRecentPosts(5);
+import Logo from "atoms:Logo";
+import i18next from "i18next";
+import { getRecentPosts } from '@lib/api';
+import { social } from '@lib/site';
+const posts = await getRecentPosts(5, i18next.language);
 ---
 <footer class="py-20">
     <div class="wrapper">
@@ -36,22 +37,24 @@ const posts = await getRecentPosts(5);
                     </p>
                 </div>
             </div>
-            <div class="col-span-2">
-                <h2 class="md:text-right h4 uppercase text-slate-400 tracking-widest font-heading font-bold mb-6">{t('footer.blog.title')}</h2>
-                <ul aria-label="Blog post list">
-                    {posts.map(({ title, date }) => (
-                    <li class="flex odd:bg-slate-50 rounded p-4 text-slate-700 items-end justify-between">
-                        <h3 class="text-sm font-heading">{title}</h3>
-                        <time class="text-xs text-slate-400">{date}</time>
-                    </li>
-                    ))}
-                </ul>
-                <div class="md:text-right mt-6">
-                    <a href="/blog" class="inline-block text-brand-midblue underline underline-offset-4">
-                        {t('footer.blog.action')} ➝
-                    </a>
+            { posts.length > 0 &&
+                <div class="col-span-2">
+                    <h2 class="md:text-right h4 uppercase text-slate-400 tracking-widest font-heading font-bold mb-6">{t('footer.blog.title')}</h2>
+                    <ul aria-label="Blog post list">
+                        {posts.map(({ title, date }) => (
+                        <li class="flex odd:bg-slate-50 rounded p-4 text-slate-700 items-end justify-between">
+                            <h3 class="text-sm font-heading">{title}</h3>
+                            <time class="text-xs text-slate-400">{date}</time>
+                        </li>
+                        ))}
+                    </ul>
+                    <div class="md:text-right mt-6">
+                        <a href="/blog" class="inline-block text-brand-midblue underline underline-offset-4">
+                            {t('footer.blog.action')} ➝
+                        </a>
+                    </div>
                 </div>
-            </div>
+             }
         </div>
     </div>
 </footer>

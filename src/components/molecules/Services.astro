@@ -1,8 +1,8 @@
 ---
-import Card from "./Card.astro";
+import Card from "molecules:Card";
 import { t } from "i18next";
 
-const services = await Astro.glob("../pages/wordpress-services/*.md");
+const services = await Astro.glob("../../pages/wordpress-services/*.md");
 const featured = [
     'wp-pagespeed', 
     'wp-security',

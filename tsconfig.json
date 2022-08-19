@@ -14,7 +14,14 @@
     // Add type definitions for our Astro runtime.
     "types": ["astro/client"],
     "paths": {
-      "templates:*": ["components/templates/*.astro"]
+      "@/*": ["components/*"],
+      "@lib/*": ["lib/*"],
+      "@layouts/*": ["layouts/*"],
+      "templates:*": ["components/templates/*.astro"],
+      "layouts:*": ["components/layouts/*.astro"],
+      "molecules:*": ["components/molecules/*.astro"],
+      "atoms:*": ["components/atoms/*.astro"],
+      "svg:*": ["components/svgs/*.astro"],
     }
   }
 }

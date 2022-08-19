@@ -2,9 +2,9 @@
 import i18next, { t } from "i18next";
 import { localizePath } from "astro-i18next";
 import { LanguageSelector } from "astro-i18next/components";
-import Logo from "./Logo.astro";
-import MapleLeaf from "./MapleLeaf.astro";
-import QuizButton from "./QuizButton.astro";
+import Logo from "atoms:Logo";
+import MapleLeaf from "@/MapleLeaf.astro";
+import QuizButton from "atoms:QuizButton";
 
 const navItems = [
 	{ url: '/wordpress-services', label: t('navigation.services') },

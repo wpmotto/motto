@@ -58,16 +58,8 @@
         "review": "If you've enjoyed our services, please <0>review us on Google.</0>",
         "jobs": "If you're interested in <0>working for us</0>, please check our <1>open positions</1>."
     },
-    "seo": {
-        "title": "astro-i18next | Translate your Astro websites with i18next",
-        "description": "astro-i18next is an astro integration of i18next + some utility components to help you translate your astro websites!",
-        "ogTitle": "astro-i18next | Translate your Astro website with i18next!",
-        "ogImageAlt": "A test tube placed on the lower left corner spreading out the astro-i18next text with bubbles and country flags."
-    },
-    "description": "An <0>astro</0> integration of <1>i18next</1> + some utility components to help you translate your astro websites!",
-    "astroTitle": "Astro website",
-    "i18nextTitle": "i18next website",
-    "astroHackathonTitle": "Astro's showcase of astro-i18next",
-    "twitterTitle": "Follow me on Twitter :)",
-    "getStarted": "Get started"
+    "blog": {
+        "moreTitle": "More Articles",
+        "noposts": "No posts available."
+    }
 }

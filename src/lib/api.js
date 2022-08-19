@@ -32,9 +32,9 @@ export async function getAllPostsWithSlugs(num = 10000) {
   return data?.posts;
 }
 
-export async function getRecentPosts(num = 12) {
+export async function getRecentPosts(num = 12, lang = "en") {
   const data = await fetchAPI(`{
-      posts(first: ${num}) {
+      posts(first: ${num}, where: {wpmlLanguage: "${lang}"}) {
       edges {
         node {
           slug

@@ -64,10 +64,8 @@
         "ogTitle": "astro-i18next | Traduisez vos sites web Astro avec i18next !",
         "ogImageAlt": "Un tube à essai placé dans le coin en bas à gauche et qui propage le texte astro-i18next avec des bulles et des drapeaux de pays."
     },
-    "description": "Une intégration <0>astro</0> d'<1>i18next</1> + quelques composants utilitaires pour vous aider à traduire vos sites astro !",
-    "astroTitle": "Site web d'Astro",
-    "i18nextTitle": "Site web d'i18next",
-    "astroHackathonTitle": "Exposition d'astro-i18next par Astro",
-    "twitterTitle": "Suivez-moi sur Twitter :)",
-    "getStarted": "Commencer"
+    "blog": {
+        "moreTitle": "More Articles",
+        "noposts": "No posts available."
+    }
 }

@@ -1,0 +1,42 @@
+---
+import { t } from "i18next";
+import { getRecentPosts } from '@lib/api';
+import Plain from '@layouts/Plain.astro';
+import PostCard from 'molecules:PostCard';
+import BlogHeader from 'molecules:BlogHeader';
+import i18next from "i18next";
+const { lang } = Astro.props;
+i18next.changeLanguage(lang as string);
+const posts = await getRecentPosts(1000, lang);
+const featuredPosts = posts.filter(i => i.imageUrl).slice(0, 8);
+---
+<Plain title="Blog" description="Blog posts">
+  <main class="wrapper">
+    <BlogHeader/>
+    <hr class="my-12"/>
+    { posts.length > 0 ? 
+        <div class="grid grid-cols-4 gap-12">
+        <div class="col-span-3 grid gap-5 lg:grid-cols-2">
+            { featuredPosts.map(post => 
+            <PostCard post={post} />
+            ) }
+        </div>
+    
+        <div class="col-span-1">
+            <h2 class="font-heading text-h4 mb-8">{t('blog.moreTitle')}</h2>
+            <ul class="space-y-6">
+            { posts.filter(post => !featuredPosts.map(i => i.href).includes(post.href)).map(post => 
+            <li>
+                <a href={post.href}>
+                {post.title}
+                </a>
+            </li>
+            ) }
+            </ul>
+        </div>
+        </div>
+    : <div>
+        <p>{t('blog.noposts')}</p>
+    </div> }
+  </main>
+</Plain>
