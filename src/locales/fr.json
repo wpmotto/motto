@@ -65,7 +65,13 @@
         "ogImageAlt": "Un tube à essai placé dans le coin en bas à gauche et qui propage le texte astro-i18next avec des bulles et des drapeaux de pays."
     },
     "blog": {
-        "moreTitle": "More Articles",
-        "noposts": "No posts available."
-    }
+        "moreTitle": "Plus d'articles",
+        "noposts": "Aucun message disponible.",
+        "backToBlogAction": "Retour au blog"
+    },
+    "blogHeader": {
+        "subtitle": "Restez à jour sur la façon dont WordPress peut affecter votre site Web.",
+        "sr-email-label": "Adresse e-mail"
+    },
+    "logoLink": "/fr" 
 }
