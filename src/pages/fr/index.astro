@@ -5,31 +5,27 @@ import Audit from '../../components/Audit.astro';
 import Stats from '../../components/Stats.astro';
 import Trust from '../../components/Trust.astro';
 import PageHeader from '../../components/PageHeader.astro';
-import { t } from "i18next";
 import i18next from "i18next";
-
-let lang = "fr";
-
-i18next.changeLanguage(lang as string);
+i18next.changeLanguage("fr");
 ---
 
 <Plain title="Homepage" description="Homepage">
 	<main>
 		<PageHeader>
-			<h1 class="title">{t("home.hero.title")}</h1>
-			<p class="font-heading text-lg font-light">{t("home.hero.subtitle")}</p>
+			<h1 class="title">Vos gardiens WordPress</h1>
+			<p class="font-heading text-lg font-light">
+				Ne vous souciez plus jamais de votre site WordPress. Nous serons votre webmestre WordPress dédié.
+			</p>
 			<a href="/wordpress-services/maintenance" class="inline-block rounded-full px-6 py-3 border-4 border-brand-midblue text-brand-midblue font-semibold uppercase tracking-wide font-heading bg-brand-midblue/10 hover:bg-brand-midblue hover:text-white transition-colors">
-				{t("home.hero.button_txt")}
+				Maintenance WordPress
 			</a>
 			<lottie-player slot="graphic" src="/motto-lottie.json" background="transparent" speed="0.8" loop="" autoplay=""></lottie-player>
 		</PageHeader>
 
 		<div class="wrapper py-48 md:py-36 relative">
-			<div class="text-center max-w-full mx-auto w-[60ch]">
+			<div class="text-center max-w-full mx-auto w-[60ch]">	
 				<p class="text-lg font-heading font-light">
-					{t("home.description.beginning")}
-					<strong class="text-brand">{t("home.description.strong_txt")}</strong>
-					{t("home.description.end")}	
+					Motto est une <strong class="text-brand">agence WordPress</strong> canadienne spécialisée dans tout ce qui concerne WordPress. Nous sommes une petite mais puissante équipe basée à Montréal, la capitale technologique et artistique du Canada.
 				</p>
 			</div>
 

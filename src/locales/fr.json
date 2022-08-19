@@ -20,50 +20,38 @@
             "action": "Lisez le blog pour tout ce qui concerne WordPress"
         }
     },
-    "home": {
-        "hero": {
-            "title": "Vos gardiens WordPress",
-            "subtitle": "Ne vous souciez plus jamais de votre site WordPress. Nous serons votre webmestre WordPress dédié.",
-            "button_txt": "maintenance wordpress"
-        },
-        "description": {
-            "beginning": "Motto est une ",
-            "strong_txt": "agence WordPress",
-            "end": " canadienne spécialisée dans tout ce qui concerne WordPress. Nous sommes une petite mais puissante équipe basée à Montréal, la capitale technologique et artistique du Canada." 
-        },
-        "services": {
-            "title": "Nos services WordPress",
-            "action": "Plus de services WordPress"
-        },
-        "trust": {
-            "companies_title": "Entreprises qui nous font confiance",
-            "partners": {
-                "title": "Nos partenaires",
-                "description": "Nous nous associons et travaillons avec des entreprises leaders de l'industrie afin que vous n'ayez pas à vous demander si vous travaillez avec les meilleurs. Nous avons travaillé avec de nombreuses entreprises au fil des ans et avons un processus de vérification approfondi, nous sommes donc 100% confiants avec les partenaires avec lesquels nous travaillons."
-            }    
-        },
-        "stats": {
-            "title": "Statistiques de Motto WordPress",
-            "business": {
-                "units": "ANS",
-                "description": "en affaires"
-            },
-            "maintained": {
-                "description": "Installations WordPress maintenues"
-            },
-            "hosted": {
-                "units": "mio",
-                "description": "Visiteurs WordPress hébergés par mois"
-            },
-            "devs": {
-                "description": "Développeurs canadiens à votre service"
-            }
-        },
-        "audit": {
-            "title": "Audit WordPress gratuit",
-            "description": "Recevez gratuitement un audit détaillé de votre site WordPress de la part de nos experts du secteur. Il n'y a aucune obligation et les connaissances que vous acquérez peuvent vous faire économiser des milliers de dollars.",
-            "button_text": "Répondez au quiz d'audit"
+    "services": {
+        "title": "Nos services WordPress",
+        "action": "Plus de services WordPress"
+    },
+    "trust": {
+        "companies_title": "Entreprises qui nous font confiance",
+        "partners": {
+            "title": "Nos partenaires",
+            "description": "Nous nous associons et travaillons avec des entreprises leaders de l'industrie afin que vous n'ayez pas à vous demander si vous travaillez avec les meilleurs. Nous avons travaillé avec de nombreuses entreprises au fil des ans et avons un processus de vérification approfondi, nous sommes donc 100% confiants avec les partenaires avec lesquels nous travaillons."
         }
+    },
+    "stats": {
+        "title": "Statistiques de Motto WordPress",
+        "business": {
+            "units": "ANS",
+            "description": "en affaires"
+        },
+        "maintained": {
+            "description": "Installations WordPress maintenues"
+        },
+        "hosted": {
+            "units": "mio",
+            "description": "Visiteurs WordPress hébergés par mois"
+        },
+        "devs": {
+            "description": "Développeurs canadiens à votre service"
+        }
+    },
+    "audit": {
+        "title": "Audit WordPress gratuit",
+        "description": "Recevez gratuitement un audit détaillé de votre site WordPress de la part de nos experts du secteur. Il n'y a aucune obligation et les connaissances que vous acquérez peuvent vous faire économiser des milliers de dollars.",
+        "button_text": "Répondez au quiz d'audit"
     },
     "about": {
         "follow": "Suivez-nous ailleurs",

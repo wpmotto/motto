@@ -10,7 +10,7 @@ const featured = [
 ]
 ---
 <section>
-    <h1 class="my-12 title text-center">{t("home.services.title")}</h1>
+    <h1 class="my-12 title text-center">{t("services.title")}</h1>
     <div class="grid grid-cols-1 md:grid-cols-3 place-content-center gap-12">
     {services
         .filter(i => featured.includes(i.frontmatter.sku))
@@ -23,6 +23,6 @@ const featured = [
     )}
     </div>
     <p class="text-center my-12">
-        <a href="/wordpress-services" class="text-link">{t("home.services.action")} ➝</a>
+        <a href="/wordpress-services" class="text-link">{t("services.action")} ➝</a>
     </p>
 </section>

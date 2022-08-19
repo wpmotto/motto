@@ -2,30 +2,30 @@
 import { t } from "i18next";
 const stats = [
     {
-        unit: t("home.stats.business.units"),
+        unit: t("stats.business.units"),
         scalar: 25,
-        description: t("home.stats.business.description")
+        description: t("stats.business.description")
     },
     {
         unit: '+',
         scalar: 200,
-        description: t("home.stats.maintained.description")
+        description: t("stats.maintained.description")
     },
     {
-        unit: t("home.stats.hosted.units"),
+        unit: t("stats.hosted.units"),
         scalar: 1,
-        description: t("home.stats.hosted.description")
+        description: t("stats.hosted.description")
     },
     {
         unit: '%',
         scalar: 100,
-        description: t("home.stats.devs.description")
+        description: t("stats.devs.description")
     },
 ];
 ---
 <div class="text-center px-12 py-20">
     <div class="wrapper">
-        <h1 class="sr-only">{t("home.stats.title")}</h1>
+        <h1 class="sr-only">{t("stats.title")}</h1>
         <div class="flex flex-col md:flex-row gap-8 justify-center items-center flex-wrap">
             {stats.map(stat => 
             <div class="w-60">

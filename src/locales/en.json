@@ -20,53 +20,38 @@
             "action": "Read the Blog for all things WordPress"
         }
     },
-    "home": {
-        "hero": {
-            "title": "Your WordPress Guardians",
-            "subtitle": "Never worry about your WordPress site again. We'll be your dedicated WordPress web master.",
-            "button_txt": "wordpress maintenance"
-        },
-        "description": {
-            "begining": "Motto is a Canadian ",
-            "strong_txt": "WordPress agency",
-            "end": " specializing in all things WordPress. We are a small but mighty team based in Canada’s tech and art capital, Montreal." 
-        },
-        "beginning": "Motto est une ",
-        "strong_txt": "agence WordPress",
-        "end": " canadienne spécialisée dans tout ce qui concerne WordPress. Nous sommes une petite mais puissante équipe basée à Montréal, la capitale technologique et artistique du Canada.", 
-        "services": {
-            "title": "Our WordPress Services",
-            "action": "More WordPress Services"
-        },
-        "trust": {
-            "companies_title": "Companies that trust us",
-            "partners": {
-                "title": "Our Partners",
-                "description": "We partner and work with industry leading companies so you don't have to wonder if you're working with the best. We've worked with many companies over the years and have a thorough vetting process so we're 100% confident with the partners we work with."
-            }    
-        },
-        "stats": {
-            "title": "Statistiques de Motto WordPress",
-            "business": {
-                "units": "YRS",
-                "description": "in Business"
-            },
-            "maintained": {
-                "description": "Maintained WordPress Installations"
-            },
-            "hosted": {
-                "units": "mio",
-                "description": "Hosted WordPress Visitors per month"
-            },
-            "devs": {
-                "description": "Canadian Developers at Your Service"
-            }
-        },
-        "audit": {
-            "title": "Free WordPress Audit",
-            "description": "Receive a detailed audit of your WordPress site at no charge from our industry experts. There's no obligation and the knowledge you gain can save you thousands of dollars.",
-            "button_text": "Take the Audit Quiz"
+    "services": {
+        "title": "Our WordPress Services",
+        "action": "More WordPress Services"
+    },
+    "trust": {
+        "companies_title": "Companies that trust us",
+        "partners": {
+            "title": "Our Partners",
+            "description": "We partner and work with industry leading companies so you don't have to wonder if you're working with the best. We've worked with many companies over the years and have a thorough vetting process so we're 100% confident with the partners we work with."
         }
+    },
+    "stats": {
+        "title": "Statistiques de Motto WordPress",
+        "business": {
+            "units": "YRS",
+            "description": "in Business"
+        },
+        "maintained": {
+            "description": "Maintained WordPress Installations"
+        },
+        "hosted": {
+            "units": "mio",
+            "description": "Hosted WordPress Visitors per month"
+        },
+        "devs": {
+            "description": "Canadian Developers at Your Service"
+        }
+    },
+    "audit": {
+        "title": "Free WordPress Audit",
+        "description": "Receive a detailed audit of your WordPress site at no charge from our industry experts. There's no obligation and the knowledge you gain can save you thousands of dollars.",
+        "button_text": "Take the Audit Quiz"
     },
     "about": {
         "follow": "Follow Us Elsewhere",
