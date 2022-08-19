@@ -66,6 +66,5 @@
     "blogHeader": {
         "subtitle": "Stay up to date on how WordPress can affect your website.",
         "sr-email-label": "Email address"
-    },
-    "logoLink": "/" 
+    }
 }
