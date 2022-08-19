@@ -60,6 +60,12 @@
     },
     "blog": {
         "moreTitle": "More Articles",
-        "noposts": "No posts available."
-    }
+        "noposts": "No posts available.",
+        "backToBlogAction": "Back to the Blog"
+    },
+    "blogHeader": {
+        "subtitle": "Stay up to date on how WordPress can affect your website.",
+        "sr-email-label": "Email address"
+    },
+    "logoLink": "/" 
 }
