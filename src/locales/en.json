@@ -41,7 +41,7 @@
             "description": "Maintained WordPress Installations"
         },
         "hosted": {
-            "units": "mio",
+            "units": "M",
             "description": "Hosted WordPress Visitors per month"
         },
         "devs": {
