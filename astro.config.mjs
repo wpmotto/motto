@@ -5,6 +5,7 @@ import astroI18next from "astro-i18next";
 import sitemap from "@astrojs/sitemap";
 import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
+import robotsTxt from 'astro-robots-txt';
 
 export default defineConfig({
   site: "https://motto.ca/",
@@ -15,6 +16,7 @@ export default defineConfig({
     preact(),
     tailwind(),
     mdx(),
+    robotsTxt(),
     partytown({
       // Adds dataLayer.push as a forwarding-event.
       config: {
