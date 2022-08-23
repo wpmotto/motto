@@ -3,9 +3,15 @@ sku: wp-insights
 title: 'WordPress Conversion Tracking'
 keyword: 'WordPress Conversion Tracking'
 layout: "@layouts/Service.astro"
-description: Tracking your WordPress site's customer conversion rate is a fundamental to any decision you make with your website. We will take care of all the technicalities for you.
+description: Tracking your WordPress site's customer conversion rate is fundamental to any decision you make with your website. We will take care of all the technicalities for you.
 price: 50
 term: month
+subnav: 
+    - Conversion Tracking Installation
+    - Identify the Actions that Matter
+    - Professional Configuration of Google Analytics
+    - Monthly Reports of Conversions and Business Critical Analytics
+    - Universal to GA4 Migration
 ---
 
 Having a website is an absolute necessity in this digital era and if you've gotten that far for your business already, congratulations! However, the next question you need to ask yourself is: **Is my website actually achieving its goals?**

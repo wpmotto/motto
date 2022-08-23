@@ -3,11 +3,12 @@ sku: wp-updates
 title: 'WordPress Updates'
 layout: "@layouts/Service.astro"
 description: The most critical thing you can do for WordPress is keep its plugins and core up-to-date. We do this for you every month, safely and effectively with reporting on how things went.
-price: 120
+price: 125
 term: month
-included: 
-    - wp-sla
+# included: 
+#     - wp-sla
 subnav:
+    - 1 Hour of developer support
     - Updating Plugins and Themes
     - Updating WordPress Core
     - Updating Server Infrastructure
@@ -23,6 +24,12 @@ subnav:
 The problem is that this can sometimes be tricky because updates can break a website. They should be made on a staging environment and tested thoroughly before being done on your live site. We make this dead simple by doing it for you by an experienced WordPress professional every month.
 
 There are many layers to your WordPress website and each one should be properly maintained, monitored and kept up to date. 
+
+## 1 Hour of developer support
+
+Sometimes updates can be risky or extremely time consuming if you're not an experienced developer. We've got you covered.
+
+Unsure of how to do something? Don’t risk it, ask us first! Our experienced team of WordPress experts will walk you through it. This avoids the risk of breaking something you may not be familiar with.
 
 ## Updating Plugins and Themes
 

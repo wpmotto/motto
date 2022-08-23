@@ -19,7 +19,7 @@
 }
 
 .content {
-	@apply prose prose-headings:font-heading prose-headings:text-slate-700 prose-headings:uppercase prose-a:text-brand-midblue lg:prose-xl;	
+	@apply prose prose-headings:font-heading prose-headings:text-slate-700 prose-headings:uppercase prose-a:text-brand-midblue;	
 }
 
 .title {

@@ -2,7 +2,7 @@
 sku: wp-accessibility
 title: WordPress Accessibility
 layout: "@layouts/Service.astro"
-description: Making WordPress site accessible to users is now a legal requirement in many places. Learn how and why you should do it now.
+description: Making your WordPress site accessible to users is now a legal requirement in many places. Don't fall behind. We'll fine-tune your website to be properly accessible and leading the future of online content for all.
 price: 150
 term: month
 subnav: 

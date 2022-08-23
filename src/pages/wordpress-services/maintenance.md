@@ -10,8 +10,16 @@ included:
     - wp-hosting
     - wp-updates
 subnav: 
-    - Optimized Wordpress Hosting
     - Daily Full Backups
+    - 24/7 MONITORING
+    - Reporting
+    - Security
+    - Staging
+    - Free CDN
+    - Immediate SUPPORT
+    - ERROR MONITORING AND PRO-ACTIVE FIXES
+    - BRUTE FORCE ATTACKS
+    - LATEST PHP UPGRADES
 ---
 
 [Many studies](https://sucuri.net/reports/19-sucuri-2018-hacked-report.pdf) show that most hacked WordPress sites were compromised from out of date core or plugin files. This is almost entirely avoidable by keeping things up-to-date with a proper WordPress maintenance plan. The problem is that this can sometimes be tricky because updates can break a website. They should be made on a staging environment and tested thoroughly before being done on your live site. We make this dead simple by doing it for you by an experienced WordPress professional every month.
@@ -19,7 +27,7 @@ subnav:
 - Unlimited support
 - Update core and plugins
 - Error-monitoring and pro-active fixes
-- Defend against brute force attacks
+- Professional staging of all updates so your live site stays pristine. 
 
 ## DAILY FULL BACKUPS
 

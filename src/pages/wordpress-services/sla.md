@@ -2,7 +2,7 @@
 sku: wp-sla
 title: 'WordPress SLA'
 layout: "@layouts/Service.astro"
-description: We offer a servie level agreement so that we respond to any request right away.
-price: 95
+description: We offer a service level agreement so that our WordPress experts are on standby for you as soon as you need them.
+price: 150
 term: hour
 ---
