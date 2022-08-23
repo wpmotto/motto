@@ -3,15 +3,15 @@ sku: wp-insights
 title: Suivi des conversions WordPress
 keyword: Suivi des conversions WordPress
 layout: "@layouts/Service.astro"
-description: "Tracking your WordPress site's customer conversion rate is fundamental to any decision you make with your website. We will take care of all the technicalities for you."
+description: Le suivi du taux de conversion des clients de votre site WordPress est fondamental pour toute décision que vous prenez avec votre site Web. Nous nous occupons de tous les aspects techniques pour vous.
 price: '50'
 term: mois
 subnav:
-  - Conversion Tracking Installation
-  - Identify the Actions that Matter
-  - Professional Configuration of Google Analytics
-  - Monthly Reports of Conversions and Business Critical Analytics
-  - Universal to GA4 Migration
+  - Installation du suivi des conversions
+  - Identifiez les actions qui comptent
+  - Configuration professionnelle de Google Analytics
+ "- Rapports mensuels sur les conversions et analyses critiques pour l'entreprise"
+  - Migration universelle vers GA4
 ---
 
 Avoir un site Web est une nécessité absolue à l'ère numérique et si vous êtes déjà allé aussi loin pour votre entreprise, félicitations ! Cependant, la question suivante que vous devez vous poser est la suivante : **mon site Web atteint-il réellement ses objectifs ?**
