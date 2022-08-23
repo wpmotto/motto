@@ -94,8 +94,6 @@ Un réseau de diffusion de contenu (CDN) peut être utilisé pour fournir vos re
 
 La plupart des fournisseurs facturent ce service, mais comme c'est ce que nous considérons comme une pratique courante pour un site Web, nous l'incluons gratuitement.
 
-PressMaster Security résout les vulnérabilités WordPress les plus courantes et les causes de temps d'arrêt de la manière la plus sûre possible. Ceci, associé à l'hébergement Uptime, fournit des temps d'arrêt minimes, voire inexistants.
-
 ## SOUTIEN immédiat
 
 Parfois, les mises à jour peuvent être risquées si vous n'êtes pas un développeur expérimenté. Nous avons ce qu'il vous faut.

@@ -94,9 +94,6 @@ A content delivery network (CDN) can be used to deliver your static assets (imag
 
 Most providers charge for this service, but since this is what we consider standard practice for a website – we include it for free.
 
-
-PressMaster Security addresses the most common WordPress vulnerabilities and causes of downtime in the safest manner possible. This, coupled with Uptime hosting, provides minimal if any downtime.
-
 ## Immediate SUPPORT
 
 Sometimes updates can be risky if you're not an experienced developer. We've got you covered.
