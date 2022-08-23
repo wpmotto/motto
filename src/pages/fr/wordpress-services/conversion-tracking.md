@@ -1,61 +1,67 @@
 ---
 sku: wp-insights
-title: 'WordPress Conversion Tracking'
-keyword: 'WordPress Conversion Tracking'
+title: Suivi des conversions WordPress
+keyword: Suivi des conversions WordPress
 layout: "@layouts/Service.astro"
-description: Tracking your WordPress site's customer conversion rate is a fundamental to any decision you make with your website. We will take care of all the technicalities for you.
+description: Le suivi du taux de conversion des clients de votre site WordPress est fondamental pour toute décision que vous prenez avec votre site Web. Nous nous occupons de tous les aspects techniques pour vous.
 price: 50
-term: month
+term: mois
+subnav:
+  - Installation du suivi des conversions
+  - Identifiez les actions qui comptent
+  - Configuration professionnelle de Google Analytics
+  - Rapports mensuels sur les conversions et analyses critiques pour l'entreprise
+  - Migration universelle vers GA4
 ---
 
-Having a website is an absolute necessity in this digital era and if you've gotten that far for your business already, congratulations! However, the next question you need to ask yourself is: **Is my website actually achieving its goals?**
+Avoir un site Web est une nécessité absolue à l'ère numérique et si vous êtes déjà allé aussi loin pour votre entreprise, félicitations ! Cependant, la question suivante que vous devez vous poser est la suivante : **mon site Web atteint-il réellement ses objectifs ?**
 
-This is the mistake we see many customers make when building a new site with us. They know they should have one, but they don't focus on __why they should have one__. This is partly our job and we always guide them into thinking about their website in a goal oriented way. We ask questions like:
+C'est l'erreur que de nombreux clients commettent lorsqu'ils créent un nouveau site avec nous. Ils savent qu'ils devraient en avoir un, mais ils ne se demandent pas **pourquoi ils devraient en avoir un** . C'est en partie notre travail et nous les guidons toujours dans la réflexion sur leur site Web d'une manière axée sur les objectifs. Nous posons des questions comme :
 
-- What to you want your visitor to know about you __immediately__ upon arriving to your homepage?
-- What is your customer profile and demographic and how can we use this information to give them the best experience possible? How can we identify your customer over a random visitor to your website?
-- What is the primary thing you want your customer to do with your website? What is the specific action? Call you? Email you? Buy something?
-- How can we appropriately lead your ideal customer to this primary action? What does the ideal journey look like?
-- If your customer doesn't take the primary action, how should we recapture their interest?
+- Que voulez-vous que votre visiteur sache sur vous **dès** qu'il arrive sur votre page d'accueil ?
+- Quel est votre profil client et démographique et comment pouvons-nous utiliser ces informations pour leur offrir la meilleure expérience possible ? Comment pouvons-nous identifier votre client par rapport à un visiteur aléatoire de votre site Web ?
+- Quelle est la principale chose que vous voulez que votre client fasse avec votre site Web ? Quelle est l'action spécifique ? Je t'appelle? Vous envoyer un e-mail ? Acheter quelque chose?
+- Comment pouvons-nous mener de manière appropriée votre client idéal vers cette action principale ? A quoi ressemble le voyage idéal ?
+- Si votre client ne prend pas l'action principale, comment devrions-nous regagner son intérêt ?
 
-These are all good things to think about and relate to your web design and online marketing strategies. However, they're almost useless if you can't actually **measure** and **track their effectiveness**. This is why **conversion tracking** should be your very next step in building a website that works for your business. 
+Ce sont toutes de bonnes choses à penser et à relier à votre conception de sites Web et à vos stratégies de marketing en ligne. Cependant, ils sont presque inutiles si vous ne pouvez pas réellement **mesurer** et **suivre leur efficacité** . C'est pourquoi **le suivi des conversions** devrait être votre toute prochaine étape dans la création d'un site Web qui fonctionne pour votre entreprise.
 
-## What is Conversion Tracking?
+## Qu'est-ce que le suivi des conversions ?
 
-Conversion tracking is the process of identifying certain actions and behaviours in your website, through user tracking software and determining the rate at which they fulfill your desired actions. By first determining your conversion rate, you can then measure the effectiveness of any changes you make to your website. This both saves you money, by not wasting time and money on things that don't actually work, and makes you money by fine-tuning the process and rate at which your website visitors become your customers. 
+Le suivi des conversions est le processus d'identification de certaines actions et comportements sur votre site Web, grâce à un logiciel de suivi des utilisateurs et de la détermination de la vitesse à laquelle ils réalisent les actions souhaitées. En déterminant d'abord votre taux de conversion, vous pouvez ensuite mesurer l'efficacité des modifications que vous apportez à votre site Web. Cela vous permet à la fois d'économiser de l'argent, en ne perdant pas de temps et d'argent sur des choses qui ne fonctionnent pas réellement, et vous fait gagner de l'argent en affinant le processus et la vitesse à laquelle les visiteurs de votre site Web deviennent vos clients.
 
-### Conversion Rate Formula
+### Formule de taux de conversion
 
-The formula for calculating your conversion rate is:
+La formule pour calculer votre taux de conversion est :
 
 ```
-number of visitors that perform your desired action
----------------------------------------------------
-            number of total visitors
+nombre de visiteurs qui effectuent l'action souhaitée
+-----------------------------------------------------
+nombre total de visiteurs
 ```
 
-## Conversion Tracking Installation
+## Installation du suivi des conversions
 
-We can't determine a rate if we don't first track your user's actions. We will install and configure Google Analytics on your WordPress website and ensure it's working well. 
+Nous ne pouvons pas déterminer un taux si nous ne suivons pas d'abord les actions de votre utilisateur. Nous allons installer et configurer Google Analytics sur votre site WordPress et nous assurer qu'il fonctionne bien.
 
-## Identify the Actions that Matter
+## Identifiez les actions qui comptent
 
-We will help you identify the actions and behaviours that matter. It can be as simple as knowing when someone submitted your contact form, or more complicated like visitors coming from an email campaign that stay on your site for at least 1 minute, or visitors that go through a particular journey of pages before contacting you. 
+Nous vous aiderons à identifier les actions et les comportements qui comptent. Cela peut être aussi simple que de savoir quand quelqu'un a soumis votre formulaire de contact, ou plus compliqué comme les visiteurs provenant d'une campagne d'e-mails qui restent sur votre site pendant au moins 1 minute, ou les visiteurs qui passent par un parcours particulier de pages avant de vous contacter.
 
-## Professional Configuration of Google Analytics
+## Configuration professionnelle de Google Analytics
 
-Based on your input, we then configure Google Analytics to track the desired behaviour. This may include adding extra code to your website in order to properly track your desired actions. 
+Sur la base de votre entrée, nous configurons ensuite Google Analytics pour suivre le comportement souhaité. Cela peut inclure l'ajout de code supplémentaire à votre site Web afin de suivre correctement les actions souhaitées.
 
-## Monthly Reports of Conversions and Business Critical Analytics
+## Rapports mensuels sur les conversions et analyses critiques pour l'entreprise
 
-We then set up a report (separate from your website updates) that presents the most important information about the conversion metrics of your website so that you can properly make informed decisions. 
+Nous établissons ensuite un rapport (distinct des mises à jour de votre site Web) qui présente les informations les plus importantes sur les mesures de conversion de votre site Web afin que vous puissiez correctement prendre des décisions éclairées.
 
-It can be quite complicated to simply look at the raw data in Google Analytics and come out with any meaningful conclusions. That's why we extract and distill the most important information for you in an easy to understand monthly report. 
+Il peut être assez compliqué de simplement regarder les données brutes dans Google Analytics et de tirer des conclusions significatives. C'est pourquoi nous extrayons et distillons pour vous les informations les plus importantes dans un rapport mensuel facile à comprendre.
 
-We encourage you to call us if anything is unclear or you're not sure how to interpret something. At any point, you may also request a change in the metrics you're looking at and we'll update the report accordingly. 
+Nous vous encourageons à nous appeler si quelque chose n'est pas clair ou si vous ne savez pas comment interpréter quelque chose. À tout moment, vous pouvez également demander une modification des statistiques que vous consultez et nous mettrons à jour le rapport en conséquence.
 
-## Universal to GA4 Migration
+## Migration universelle vers GA4
 
-If you're not already aware, [Google's **universal analytics** will be going away](https://support.google.com/analytics/answer/11583528?hl=en) and so by July 1st, 2023, if you're using Google Analytics, you must be using their newer GA4 integration. This means you also won't have access to the data you've collected with it forever. 
+Si vous n'êtes pas déjà au courant, [l' **analyse universelle** de Google disparaîtra](https://support.google.com/analytics/answer/11583528?hl=en) et donc d'ici le 1er juillet 2023, si vous utilisez Google Analytics, vous devez utiliser leur nouvelle intégration GA4. Cela signifie que vous n'aurez pas non plus accès aux données que vous avez collectées avec lui pour toujours.
 
-If this is the case for you, we will reinstall GA4, make a backup of the specific view you would like to retain and create a report outside of Google Analytics that you can access in case you would like to look at your historical data. 
+Si tel est votre cas, nous réinstallerons GA4, effectuerons une sauvegarde de la vue spécifique que vous souhaitez conserver et créerons un rapport en dehors de Google Analytics auquel vous pourrez accéder au cas où vous souhaiteriez consulter vos données historiques.
