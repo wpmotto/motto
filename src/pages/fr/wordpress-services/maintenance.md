@@ -1,120 +1,127 @@
 ---
 sku: wp-maintenance
-title: 'WordPress Maintenance Service'
+title: Service de maintenance WordPress
 layout: "@layouts/Service.astro"
-keyword: 'wordpress maintenance service'
-description: If your WordPress site is critical to your business, it should be maintained by WordPress experts. We maintain your WordPress website so you can have peace of mind and no hassle.
-price: 160
-term: 'month'
-included: 
-    - wp-hosting
-    - wp-updates
-subnav: 
-    - Optimized Wordpress Hosting
-    - Daily Full Backups
+keyword: wordpress maintenance service
+description: "Si votre site WordPress est essentiel pour votre entreprise, il doit être maintenu par des experts WordPress. Nous maintenons votre site Web WordPress afin que vous puissiez avoir l'esprit tranquille et sans tracas."
+price: '160'
+term: mois
+included:
+  - wp-hosting
+  - wp-updates
+subnav:
+  - Sauvegardes complètes quotidiennes
+  - 24/7 MONITORING
+  - Reporting
+  - Security
+  - Staging
+  - Free CDN
+  - Immediate SUPPORT
+  - ERROR MONITORING AND PRO-ACTIVE FIXES
+  - BRUTE FORCE ATTACKS
+  - LATEST PHP UPGRADES
 ---
 
-[Many studies](https://sucuri.net/reports/19-sucuri-2018-hacked-report.pdf) show that most hacked WordPress sites were compromised from out of date core or plugin files. This is almost entirely avoidable by keeping things up-to-date with a proper WordPress maintenance plan. The problem is that this can sometimes be tricky because updates can break a website. They should be made on a staging environment and tested thoroughly before being done on your live site. We make this dead simple by doing it for you by an experienced WordPress professional every month.
+[De nombreuses études](https://sucuri.net/reports/19-sucuri-2018-hacked-report.pdf) montrent que la plupart des sites WordPress piratés ont été compromis à partir de fichiers de base ou de plugins obsolètes. Ceci est presque entièrement évitable en gardant les choses à jour avec un plan de maintenance WordPress approprié. Le problème est que cela peut parfois être délicat car les mises à jour peuvent casser un site Web. Ils doivent être réalisés dans un environnement de staging et testés minutieusement avant d'être réalisés sur votre site en ligne. Nous simplifions cela en le faisant pour vous par un professionnel WordPress expérimenté chaque mois.
 
-- Unlimited support
-- Update core and plugins
-- Error-monitoring and pro-active fixes
-- Defend against brute force attacks
+- Assistance illimitée
+- Mettre à jour le noyau et les plugins
+- Surveillance des erreurs et correctifs proactifs
+- Professional staging of all updates so your live site stays pristine.
 
-## DAILY FULL BACKUPS
+## SAUVEGARDES COMPLÈTES QUOTIDIENNES
 
-Anything can happen at any time. That's why we back your entire site up everyday.
+Tout peut arriver à tout moment. C'est pourquoi nous sauvegardons l'intégralité de votre site tous les jours.
 
-With a dynamic website like WordPress, there’s usually a lot of changes going on. With more changes comes more room for mistakes. Sometimes those mistakes can’t easily be fixed either. There should always be a plan B.
+Avec un site Web dynamique comme WordPress, il y a généralement beaucoup de changements en cours. Avec plus de changements vient plus de place pour les erreurs. Parfois, ces erreurs ne peuvent pas non plus être corrigées facilement. Il devrait toujours y avoir un plan B.
 
-Every day we back up your entire WordPress installation, including configurations, files, and databases. Simply contact us and we’ll roll back your site to time in the last 3 weeks at no charge. Rest easy that mistakes happen no matter how careful you are and that you won’t be left out in the cold. We’ve got you covered.
+Chaque jour, nous sauvegardons l'intégralité de votre installation WordPress, y compris les configurations, les fichiers et les bases de données. Contactez-nous simplement et nous restaurerons votre site au cours des 3 dernières semaines sans frais. Ayez l'esprit tranquille, des erreurs se produisent, peu importe à quel point vous êtes prudent et vous ne serez pas laissé pour compte. Nous avons ce qu'il vous faut.
 
-A full backup is taken every day and retained for 20 days. Contact us for unlimited restorations.
+Une sauvegarde complète est effectuée chaque jour et conservée pendant 20 jours. Contactez-nous pour des restaurations illimitées.
 
-## 24/7 MONITORING
+## SURVEILLANCE 24/7
 
-Anything can happen at any time, so we monitor your site 24/7 and notify you of any issues.
+Tout peut arriver à tout moment, nous surveillons donc votre site 24h/24 et 7j/7 et vous informons de tout problème.
 
-You can’t be surveilling your site all time for potential issues, nor should you. Nonetheless, things can happen at any time for any number of reasons and your site may stop working.
+Vous ne pouvez pas surveiller votre site en permanence à la recherche de problèmes potentiels, et vous ne devriez pas non plus. Néanmoins, des choses peuvent arriver à tout moment pour un certain nombre de raisons et votre site peut cesser de fonctionner.
 
-We check your site every 30 seconds to make sure it’s up and running. If it becomes affected, for example your domain name expires, you will be notified almost immediately.
+Nous vérifions votre site toutes les 30 secondes pour nous assurer qu'il est opérationnel. S'il devient affecté, par exemple votre nom de domaine expire, vous serez averti presque immédiatement.
 
-If you sign up for our Security package, we’ll even begin working on a fix to bring your site back up, in case you can’t respond at the moment.
+Si vous vous inscrivez à notre forfait Sécurité, nous commencerons même à travailler sur un correctif pour remettre votre site en état, au cas où vous ne pourriez pas répondre pour le moment.
 
-## REPORTING
+## RAPPORTS
 
-Receive an email summary report of your site every month to keep a closer eye on things.
+Recevez chaque mois un rapport récapitulatif de votre site par e-mail pour garder un œil sur les choses.
 
-You shouldn’t have to be bothered on a daily basis with the status of your website, but you should have a certain level of executive summarization so you can be kept up to speed with things and act accordingly.
+Vous ne devriez pas avoir à vous soucier quotidiennement de l'état de votre site Web, mais vous devriez avoir un certain niveau de synthèse afin que vous puissiez être tenu au courant des choses et agir en conséquence.
 
-We send monthly email summary reports covering:
+Nous envoyons des rapports récapitulatifs mensuels par e-mail couvrant :
 
-- core and plugin updates
-- uptime
-- work done
-- … and more.
+- mises à jour du noyau et des plugins
+- disponibilité
+- travail effectué
+- … et plus.
 
-## SECURITY
+## SÉCURITÉ
 
-WordPress is the target of 90% of website hacks. Don't be among these statistics.
+WordPress est la cible de 90% des piratages de sites Web. Ne faites pas partie de ces statistiques.
 
-So you’ve chosen WordPress as your CMS of choice. Great choice! It’s the most popular choice for a good reason, powering 35% of the web.
+Vous avez donc choisi WordPress comme CMS de votre choix. Bon choix! C'est le choix le plus populaire pour une bonne raison, alimentant 35% du Web.
 
-However, the bad news is because of its popularity, it’s also the #1 target for hackers.
+Cependant, la mauvaise nouvelle est qu'en raison de sa popularité, c'est aussi la cible n°1 des pirates.
 
-The good news, is that even though it’s a prime target, the vulnerabilities exploited are mostly avoidable with good maintenance and pro-active hosting.
+La bonne nouvelle, c'est que même s'il s'agit d'une cible de choix, les vulnérabilités exploitées sont pour la plupart évitables avec une bonne maintenance et un hébergement proactif.
 
-We only allow secure access to your site whether publicly (free SSL certificates!) or privately (SSH/SFTP access), implement Google’s Firewall, and monitor potentially compromised plugins on your site.
+Nous autorisons uniquement l'accès sécurisé à votre site, qu'il soit public (certificats SSL gratuits !) ou privé (accès SSH/SFTP), implémentons le pare-feu de Google et surveillons les plug-ins potentiellement compromis sur votre site.
 
-Oh, and on the off-chance you do get hacked – we’ll fix it for free. In fact, because we monitor your site, you probably won’t even notice this, because we’ll see it first, fix it immediately and update you on the occurrence.
+Oh, et au cas où vous seriez piraté, nous le réparerons gratuitement. En fait, parce que nous surveillons votre site, vous ne le remarquerez probablement même pas, car nous le verrons d'abord, le réparerons immédiatement et vous informerons de l'événement.
 
-## STAGING
+## MISE EN SCÈNE
 
-We include a staging environment and process so you can comply with industry standards.
+Nous incluons un environnement et un processus de mise en scène afin que vous puissiez vous conformer aux normes de l'industrie.
 
-It’s industry standard for any serious website to do any new feature update on a staging environment to be tested before going out to the public at large on your live environment.
+C'est la norme de l'industrie pour tout site Web sérieux de faire toute nouvelle mise à jour de fonctionnalité sur un environnement de staging à tester avant de la diffuser au grand public sur votre environnement en direct.
 
-That’s why we put a focus on a good staging environment and process to make this easy on you. Contact us and within 5 minutes you’ll have an exact replica of your live website, password protected, and ready for you to experiment with. We can also push your stage to your live site so you don’t have to repeat any work.
+C'est pourquoi nous mettons l'accent sur un bon environnement et processus de mise en scène pour vous faciliter la tâche. Contactez-nous et dans les 5 minutes, vous aurez une réplique exacte de votre site Web en direct, protégée par un mot de passe et prête à être expérimentée. Nous pouvons également pousser votre étape vers votre site en direct afin que vous n'ayez pas à répéter le travail.
 
-* Pushing stage to live should be avoided for sites with a lot of user submitted data, such as e-commerce. Consult with us before using this feature.
+- La mise en ligne de l'étape doit être évitée pour les sites avec beaucoup de données soumises par les utilisateurs, comme le commerce électronique. Consultez-nous avant d'utiliser cette fonctionnalité.
 
-## FREE CDN
+## CDN GRATUIT
 
-A powerful way to speed up a website is utilizing a CDN. That's why it's included at no extra charge.
+Un moyen puissant d'accélérer un site Web consiste à utiliser un CDN. C'est pourquoi il est inclus sans frais supplémentaires.
 
-A content delivery network (CDN) can be used to deliver your static assets (images, videos, etc) to your visitors much more quickly. This is especially true for international web traffic when your server may be located far from the user.
+Un réseau de diffusion de contenu (CDN) peut être utilisé pour fournir vos ressources statiques (images, vidéos, etc.) à vos visiteurs beaucoup plus rapidement. Cela est particulièrement vrai pour le trafic Web international lorsque votre serveur peut être situé loin de l'utilisateur.
 
-Most providers charge for this service, but since this is what we consider standard practice for a website – we include it for free.
+La plupart des fournisseurs facturent ce service, mais comme c'est ce que nous considérons comme une pratique courante pour un site Web, nous l'incluons gratuitement.
 
+PressMaster Security résout les vulnérabilités WordPress les plus courantes et les causes de temps d'arrêt de la manière la plus sûre possible. Ceci, associé à l'hébergement Uptime, fournit des temps d'arrêt minimes, voire inexistants.
 
-PressMaster Security addresses the most common WordPress vulnerabilities and causes of downtime in the safest manner possible. This, coupled with Uptime hosting, provides minimal if any downtime.
+## SOUTIEN immédiat
 
-## Immediate SUPPORT
+Parfois, les mises à jour peuvent être risquées si vous n'êtes pas un développeur expérimenté. Nous avons ce qu'il vous faut.
 
-Sometimes updates can be risky if you're not an experienced developer. We've got you covered.
+Vous ne savez pas comment faire quelque chose ? Ne prenez pas de risque, demandez-nous d'abord! Notre équipe d'experts expérimentés vous guidera à travers elle. Cela évite le risque de casser quelque chose que vous ne connaissez peut-être pas.
 
-Unsure of how to do something? Don’t risk it, ask us first! Our experienced team of experts will walk you through it. This avoids the risk of breaking something you may not be familiar with.
+## SURVEILLANCE DES ERREURS ET CORRECTIFS PROACTIFS
 
-## ERROR MONITORING AND PRO-ACTIVE FIXES
+Nous surveillons votre site et corrigeons les choses de manière proactive avant même que cela ne devienne un problème.
 
-We monitor your site and pro-actively fix things before it ever even becomes a problem.
+WordPress et [d'autres organisations](https://wpvulndb.com/plugins) publient des rapports sur les plugins et les thèmes présentant [des vulnérabilités connues](https://wordpress.org/plugins/tags/vulnerability/) . Cela nous permet d'analyser votre site Web à la recherche de fichiers compromis et de les mettre à jour (ou de les supprimer si nécessaire) avant que quiconque n'ait la possibilité d'en profiter.
 
-WordPress and [other organizations](https://wpvulndb.com/plugins) release reports of plugins and themes with [known vulnerabilities](https://wordpress.org/plugins/tags/vulnerability/). This allows us to scan your website for compromised files and update (or remove if needed) before anyone has a chance to take advantage.
+Nous surveillons également vos journaux d'erreurs. Ce n'est pas parce qu'aucun de nous ne rencontre d'erreurs visibles lors de la navigation sur votre site Web qu'elles ne se produisent pas pour certains de vos visiteurs. C'est là que la surveillance de vos journaux d'erreurs est utile. Nous identifions les problèmes potentiels que certains de vos visiteurs peuvent rencontrer et les résolvons sur-le-champ.
 
-We also monitor your error logs. Just because neither of us get any visible errors while browsing your website, it doesn’t mean they aren’t occurring for some of your visitors. This is where monitoring your error logs comes in handy. We identify potential issues some of your visitors may be having and fix them on the spot.
+## ATTAQUES PAR FORCE BRUTE
 
-## BRUTE FORCE ATTACKS
+Le piratage le plus courant est probablement les tentatives de connexion par force brute. Nous avons mis un terme à cela.
 
-Probably the most common hack are brute force login attempts. We put an end to that.
+L'une des vulnérabilités les plus courantes de WordPress n'a pas vraiment à voir avec le logiciel lui-même, c'est l'utilisateur. De nombreux utilisateurs utilisent des mots de passe faibles, ce qui permet à un pirate de deviner et de vérifier relativement facilement.
 
-One of the most common vulnerabilities with WordPress doesn’t really have to do with the software itself, it’s the user. Many users use weak passwords making it relatively easy for a hacker to simply guess and check.
+Nous interdisons automatiquement les adresses IP qui ont plus de 6 tentatives de connexion infructueuses. Nous encourageons également fortement les utilisateurs à choisir des mots de passe forts.
 
-We automatically ban IPs that have more than 6 failed login attempts. We also highly encourage users to choose strong passwords.
+## DERNIÈRES MISES À JOUR PHP
 
-## LATEST PHP UPGRADES
+La plupart des versions de PHP ne sont plus prises en charge. Nous n'utilisons que les derniers.
 
-Most PHP versions are no longer supported. We use only the latest.
+Les versions obsolètes de PHP telles que [PHP 7.1 et](https://www.php.net/supported-versions.php) les versions antérieures ne sont plus officiellement prises en charge. Cela signifie que si une vulnérabilité de sécurité apparaît, elle ne sera pas corrigée et peut exposer votre site à des pirates qui sont conscients de ces failles de sécurité.
 
-Out of date PHP versions such as [PHP 7.1 and under](https://www.php.net/supported-versions.php) are no longer officially supported. This means if a security vulnerability shows up, it won’t be fixed and can expose your site to hackers that are aware of these security holes.
-
-We keep your site upgraded to the most recent versions of PHP to ensure high performance and security.
+Nous gardons votre site mis à niveau vers les versions les plus récentes de PHP pour garantir des performances et une sécurité élevées.
