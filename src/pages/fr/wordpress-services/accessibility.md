@@ -1,59 +1,60 @@
 ---
 sku: wp-accessibility
-title: WordPress Accessibility
+title: Accessibilité WordPress
 layout: "@layouts/Service.astro"
-description: Making WordPress site accessible to users is now a legal requirement in many places. Learn how and why you should do it now.
-price: 150
-term: month
-subnav: 
-    - Solutions to Website Accessility
-    - Human Driven Accessibility Improvements
-    - Google Lighthouse Accessiblity
-    - Maintain an Accessibility Statement page
-    - Include a Contact Form for Accessibility Improvements
+description: "Rendre votre site WordPress accessible aux utilisateurs est désormais une obligation légale dans de nombreux endroits. Ne prenez pas de retard. Nous peaufinerons votre site Web pour qu'il soit correctement accessible et qu'il mène l'avenir du contenu en ligne pour tous."
+price: '150'
+term: mois
+subnav:
+ "- Solutions pour l'accessibilité du site Web"
+ "- Améliorations de l'accessibilité axées sur l'homme"
+  - Accessibilité Google Lighthouse
+ "- Maintenir une page de déclaration d'accessibilité"
+ "- Inclure un formulaire de contact pour les améliorations d'accessibilité"
 ---
 
-If you're not already aware, website accessibility is the ability for users of all abilities to read and interact with your website. Not everyone has good eyesight, fine motorskills, or other abilities one may take for granted being in the majority. Luckily, there's a lot we can do to include more people with disabilities in accessing your website. Just as you might install a wheelchair ramp beside the stairs to your retail store, there are things we can do for your website to increase its accesibility. 
+Si vous ne le savez pas déjà, l'accessibilité d'un site Web est la possibilité pour les utilisateurs de toutes capacités de lire et d'interagir avec votre site Web. Tout le monde n'a pas une bonne vue, une motricité fine ou d'autres capacités que l'on peut considérer comme allant de soi dans la majorité. Heureusement, nous pouvons faire beaucoup pour inclure davantage de personnes handicapées dans l'accès à votre site Web. Tout comme vous pourriez installer une rampe pour fauteuil roulant à côté des escaliers de votre magasin de détail, nous pouvons faire certaines choses pour que votre site Web augmente son accessibilité.
 
-Accessibility on the web has always been important. Not everyone has the same abilities to digest and access your website so doing as much as you can to allow the broadest access possible to your website is in everyone's interest. But increasing and pleasing your audience isn't the only reason you should be paying attention to accessibility. 
+L'accessibilité sur le Web a toujours été importante. Tout le monde n'a pas les mêmes capacités pour digérer et accéder à votre site Web, il est donc dans l'intérêt de tous de faire tout ce que vous pouvez pour permettre l'accès le plus large possible à votre site Web. Mais augmenter et plaire à votre public n'est pas la seule raison pour laquelle vous devriez prêter attention à l'accessibilité.
 
-The techniques involved in making a website accessible to real users, also make it more accessible to machines. Machines like Google's search bots that try to read and interpret your website for inclusion in its search results. So increasing your website accessibility can also increase your search engine traffic. It's a really nice 2 for 1 deal. 
+Les techniques utilisées pour rendre un site Web accessible aux utilisateurs réels le rendent également plus accessible aux machines. Des machines comme les robots de recherche de Google qui essaient de lire et d'interpréter votre site Web pour l'inclure dans ses résultats de recherche. Ainsi, l'augmentation de l'accessibilité de votre site Web peut également augmenter le trafic de votre moteur de recherche. C'est un très bon 2 pour 1.
 
-Just as there are laws for discriminating against disabilities in every day life of many countries, these same laws are being extended to the online world. For example, we are a Canadian company and Bill C-81 in Canada can impose up to a $25,000 fine for websites that don't comply with the [WCAG 2.0 accessibility standards](https://www.w3.org/TR/WCAG20/). [Other laws in the EU and other territories](/how-to-achieve-great-accessibility-on-canadian-websites) are coming soon too, so no matter where you are you'll want to be ahead of the curve in providing proper accessilibility to the citizens of your country. 
+Tout comme il existe des lois discriminatoires à l'égard des personnes handicapées dans la vie quotidienne de nombreux pays, ces mêmes lois sont étendues au monde en ligne. Par exemple, nous sommes une entreprise canadienne et le projet de loi C-81 au Canada peut imposer une amende pouvant aller jusqu'à 25 000 $ pour les sites Web qui ne respectent pas les normes d' [accessibilité WCAG 2.0](https://www.w3.org/TR/WCAG20/) . [D'autres lois de l'UE et d'autres territoires](/how-to-achieve-great-accessibility-on-canadian-websites) seront également bientôt disponibles, donc où que vous soyez, vous voudrez être en avance sur la courbe en offrant une accessibilité appropriée aux citoyens de votre pays.
 
-## Solutions to Website Accessility
+## Solutions pour l'accessibilité du site Web
 
-There are a few solutions to making your website more accessibible. Some of them are shortcuts that you'll want to avoid. 
+Il existe quelques solutions pour rendre votre site Web plus accessible. Certains d'entre eux sont des raccourcis que vous voudrez éviter.
 
-### Automated Doesn't work
+### Automatisé ne fonctionne pas
 
-There are automated and AI driven tools that claim to fix the issue but may actually [make it worse](https://www.nytimes.com/2022/07/13/technology/ai-web-accessibility.html).
+Il existe des outils automatisés et pilotés par l'IA qui prétendent résoudre le problème, mais qui peuvent en [fait l'aggraver](https://www.nytimes.com/2022/07/13/technology/ai-web-accessibility.html) .
 
-### Human Driven Accessibility Improvements
+### Améliorations de l'accessibilité axées sur l'homme
 
-There's not yet a good replacement for a real human developer working at the level of your code. We navigate your web page with an actual screen reader and make sure we can consume it and have access to the features your other users have. In the case where it's not possible to provide a reasonable work around to make a feature accessible, we at the very least make note of the efforts made on your accessibility statement page.
+Il n'y a pas encore de bon remplaçant pour un vrai développeur humain travaillant au niveau de votre code. Nous naviguons sur votre page Web avec un véritable lecteur d'écran et nous nous assurons que nous pouvons l'utiliser et avoir accès aux fonctionnalités dont disposent vos autres utilisateurs. Dans le cas où il n'est pas possible de fournir une solution de contournement raisonnable pour rendre une fonctionnalité accessible, nous prenons au moins note des efforts déployés sur votre page de déclaration d'accessibilité.
 
-### Google Lighthouse Accessiblity 
+### Accessibilité Google Lighthouse
 
-There are several tools that will grade the accessibility of your website and indicate the things you may need to improve. Similarly to our [Google pagespeed optimization](/wordpress-services/speed-optimization), Google also offers an accessibility grading tool. As part of our service, we will grade your site every month and ensure it's over 90. 
+Il existe plusieurs outils qui évalueront l'accessibilité de votre site Web et indiqueront les éléments que vous devrez peut-être améliorer. À l'instar de notre [optimisation](/wordpress-services/speed-optimization) de la vitesse de page de Google, Google propose également un outil de notation de l'accessibilité. Dans le cadre de notre service, nous évaluerons votre site tous les mois et veillerons à ce qu'il soit supérieur à 90.
 
-#### Why Not 100?
+#### Pourquoi pas 100 ?
 
-While a score of 100 is definitely achievable, it’s in our experience that this level of accessibility will interfere with business goals such as the brand visuals. If the client insists on a score of 100, a more customized and holistic approach may be discussed. 
+Bien qu'un score de 100 soit tout à fait réalisable, selon notre expérience, ce niveau d'accessibilité interférera avec les objectifs commerciaux tels que les visuels de la marque. Si le client insiste sur un score de 100, une approche plus personnalisée et holistique peut être discutée.
 
-## A Best Effort is Shown
+## Un meilleur effort est affiché
 
-We must be aware that we can never make a website completely accessible to every human on earth, it's simply not realistic. The important thing, and what is judged by many of the overseeing institutions, is that an active effort is being made. That's why we include the following two measures:
+Nous devons être conscients que nous ne pourrons jamais rendre un site Web complètement accessible à tous les humains sur terre, ce n'est tout simplement pas réaliste. L'important, et ce que jugent bon nombre des institutions de tutelle, c'est qu'un effort actif est fait. C'est pourquoi nous incluons les deux mesures suivantes :
 
-### Maintain an “Accessibility Statement” page
+### Maintenir une page "Déclaration d'accessibilité"
 
-We will include a properly formatted statement page and maintain the history of any improvements on it from month to month. 
+Nous inclurons une page de déclaration correctement formatée et conserverons l'historique de toutes les améliorations qui y seront apportées d'un mois à l'autre.
 
-### Include a Contact Form for Accessibility Improvements
+### Inclure un formulaire de contact pour les améliorations d'accessibilité
 
-On this page will be included a form for your users to request any other accessibility improvements that could be made. Our team will be CC’d on the recipient address and discuss the inclusion of any user submitted requests on the website with you.
+Sur cette page sera inclus un formulaire permettant à vos utilisateurs de demander toute autre amélioration de l'accessibilité qui pourrait être apportée. Notre équipe sera mise en copie de l'adresse du destinataire et discutera avec vous de l'inclusion de toute demande soumise par un utilisateur sur le site Web.
 
-## Extra Pages
-Accessibility is attained on a site-wide basis, however every site has a wide variance in the number of pages. Therefore, we can’t offer a one size fits all solution. The highest trafficked page (usually the homepage) should be chosen as a starting point. This often leads to scores going up on other pages as well due to improvements on the chosen page having globally overlapping components. 
+## Pages supplémentaires
 
-In the case that other specific URLs need to be tested and maintained, an additional cost of 75$/page is added. 
+L'accessibilité est atteinte à l'échelle du site, mais chaque site présente une grande variation dans le nombre de pages. Par conséquent, nous ne pouvons pas proposer une solution unique. La page la plus visitée (généralement la page d'accueil) doit être choisie comme point de départ. Cela conduit souvent à une augmentation des scores sur d'autres pages également en raison d'améliorations sur la page choisie ayant des composants qui se chevauchent globalement.
+
+Dans le cas où d'autres URL spécifiques doivent être testées et maintenues, un coût supplémentaire de 75$/page est ajouté.
