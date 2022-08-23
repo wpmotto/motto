@@ -1,8 +1,3 @@
-export const business = {
-    email: 'hello@motto.ca',
-    phone: '1-866-WPMOTTO',
-}
-
 export const social = [
     {
         name: "instagram",

@@ -5,6 +5,10 @@
         "about": "About",
         "audit": "Free Audit"
     },
+    "business": {
+        "email": "hello@motto.ca",
+        "phone": "1-866-WPMOTTO"
+    },
     "footer": {
         "socialTitle": "Elsewhere",
         "socialAction": "Reach out or follow us",

@@ -1,11 +1,10 @@
 ---
 import { Trans } from "astro-i18next/components";
-import { t } from "i18next";
 import Plain from '@layouts/Plain.astro';
 import { social } from '@lib/site';
 import { Icon } from 'astro-icon';
-import i18next from "i18next";
 const { title, lang } = Astro.props;
+import i18next, { t } from "i18next";
 i18next.changeLanguage(lang as string);
 ---
 <Plain>

@@ -5,6 +5,10 @@
         "services": "Services <0>WordPress</0>",
         "audit": "Audit Gratuit"
     },
+    "business": {
+        "email": "bonjour@motto.ca",
+        "phone": "1-866-WPMOTTO"
+    },
     "footer": {
         "socialTitle": "Ailleurs",
         "socialAction": "Contactez-nous ou suivez-nous",
