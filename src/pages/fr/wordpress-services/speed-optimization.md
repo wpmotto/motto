@@ -21,12 +21,12 @@ Nous exécutons le rapport tous les mois et mettons en œuvre tout ce qui est n�
 
 Nous utilisons votre page d'accueil par défaut mais vous pouvez changer pour une autre page à tout moment.
 
-## Monitor your Pagespeed Score
+## Surveillez votre score Pagespeed
 
-Although a lot of the work for optimizing the performance of a website is done at its build time, or all at once to fix any underlying issues, it doesn't mean it's a one-time thing. The fact of the matter is that WordPress sites are dynamic in nature. They constantly change as you publish content, upload images and add plugins for new features. This means that the pagespeed score you received last month often isn't the one you're currently receiving.
+Bien qu'une grande partie du travail d'optimisation des performances d'un site Web soit effectuée au moment de sa construction, ou tout à la fois pour résoudre les problèmes sous-jacents, cela ne signifie pas que c'est une chose ponctuelle. Le fait est que les sites WordPress sont de nature dynamique. Ils changent constamment au fur et à mesure que vous publiez du contenu, téléchargez des images et ajoutez des plugins pour de nouvelles fonctionnalités. Cela signifie que le score de vitesse de page que vous avez reçu le mois dernier n'est souvent pas celui que vous recevez actuellement.
 
-We will monitor your pagespeed score and make sure we address any issues that effect it from month to month. Most of the time we won't even bother you with the details and will fix the issue to ensure you're over 90 pagespeed, and give you the cliff notes in your monthly report. Forgot to resize, compress and use the proper image format for that new promotion on your homepage? It won't matter because we'll do it for you.
+Nous surveillerons votre score de vitesse de page et nous nous assurerons de résoudre tous les problèmes qui l'affectent de mois en mois. La plupart du temps, nous ne vous dérangerons même pas avec les détails et résoudrons le problème pour vous assurer que vous avez une vitesse de page supérieure à 90 et vous donnerons les notes de falaise dans votre rapport mensuel. Vous avez oublié de redimensionner, de compresser et d'utiliser le bon format d'image pour cette nouvelle promotion sur votre page d'accueil ? Cela n'aura pas d'importance car nous le ferons pour vous.
 
-## Receive a report on improvements made
+## Recevoir un rapport sur les améliorations apportées
 
-Every month you'll receive a report of your current pagespeed this month and notes on the work done to address your score. No more wondering whether your site isn't ranking because of its performance. You'll get a nice re-affirmation to your inbox that Google has issued you a greenlight in regards to speed optimization.
+Chaque mois, vous recevrez un rapport sur votre vitesse de page actuelle ce mois-ci et des notes sur le travail effectué pour améliorer votre score. Plus besoin de vous demander si votre site n'est pas classé en raison de ses performances. Vous recevrez une belle confirmation dans votre boîte de réception que Google vous a donné le feu vert en ce qui concerne l'optimisation de la vitesse.
