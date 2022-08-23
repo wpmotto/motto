@@ -74,7 +74,7 @@
     },
     "blog": {
         "moreTitle": "Plus d'articles",
-        "noposts": "Aucun message disponible.",
+        "noposts": "Aucun article disponible.",
         "backToBlogAction": "Retour au blog"
     },
     "blogHeader": {

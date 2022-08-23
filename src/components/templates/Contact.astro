@@ -8,9 +8,9 @@ const { title, lang } = Astro.props;
 i18next.changeLanguage(lang as string);
 ---
 <Plain>
-	<div class="max-w-xl mx-auto pb-20">
-		<h1 class="font-heading font-bold text-h1 my-12 text-center">{ title }</h1>
-		<p class="flex justify-center space-x-6 text-lead">
+	<div class="px-8 max-w-xl mx-auto pb-20">
+		<h1 class="title my-12 text-center">{ title }</h1>
+		<p class="flex justify-center space-x-2 md:space-x-6 text-base md:text-lead">
 			<a class="text-brand-action underline underline-offset-2" href={`mailto:${t('business.email')}`}>{t('business.email')}</a>
 			<span class="text-slate-300">/</span>
 			<a class="text-brand-action underline underline-offset-2" href={`tel:${t('business.phone')}`}>{t('business.phone')}</a>
