@@ -4,6 +4,7 @@ import tailwind from "@astrojs/tailwind";
 import astroI18next from "astro-i18next";
 import sitemap from "@astrojs/sitemap";
 import mdx from '@astrojs/mdx';
+import partytown from '@astrojs/partytown';
 
 export default defineConfig({
   site: "https://motto.ca/",
@@ -14,6 +15,12 @@ export default defineConfig({
     preact(),
     tailwind(),
     mdx(),
+    partytown({
+      // Adds dataLayer.push as a forwarding-event.
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
     sitemap({
       i18n: {
         defaultLocale: "en", // All urls that don't contain `es` or `fr` after `https://stargazers.club/` will be treated as default locale, i.e. `en`
