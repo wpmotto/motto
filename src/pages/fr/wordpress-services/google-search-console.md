@@ -3,13 +3,13 @@ sku: wp-console
 title: Console de recherche Google WordPress
 layout: "@layouts/Service.astro"
 keyword: wordpress google search console
-description: "Google tells you exactly what it wants to see from your website in a console you can connect. We implement all of its suggestions every month so there's no guesswork whether you're doing things right."
+description: "Google vous indique exactement ce qu'il souhaite voir sur votre site Web dans une console que vous pouvez connecter. Nous mettons en œuvre toutes ses suggestions chaque mois afin qu'il n'y ait aucune conjecture si vous faites les choses correctement."
 price: '50'
 term: mois
 subnav:
-  - Site Verification
-  - Index Coverage
-  - Mobile Usability
+  - Vérification du site
+ "- Couverture de l'indice"
+  - Convivialité mobile
 ---
 
 [La console de recherche Google](https://search.google.com/search-console/about) vous permet de connecter votre site WordPress et de l'analyser en permanence pour les améliorations que Google souhaiterait voir.
@@ -18,20 +18,20 @@ C'est une mine d'informations car on peut supposer que suivre les propres recomm
 
 Nous connectons votre compte et vérifions votre console tous les mois pour nous assurer que vous disposez du site WordPress le plus convivial pour Google. Les recommandations sont fixées sur place – très simples, et pourtant très efficaces.
 
-## Site Verification
+## Vérification du site
 
-We will verify you're WordPress site with Google Search Console so they can be connected and continuously scan your site for recommendations or issues.
+Nous vérifierons votre site WordPress avec Google Search Console afin qu'ils puissent être connectés et analyser en permanence votre site à la recherche de recommandations ou de problèmes.
 
-## Index Coverage
+## Couverture de l'indice
 
-If your site isn't being indexed by Google, you have no chance of ranking. This isn't usually a problem for your homepage, but if you have a large site, you may have many pages that aren't being indexed or that are causing issues in Google's index.
+Si votre site n'est pas indexé par Google, vous n'avez aucune chance d'être classé. Ce n'est généralement pas un problème pour votre page d'accueil, mais si vous avez un site volumineux, vous pouvez avoir de nombreuses pages qui ne sont pas indexées ou qui causent des problèmes dans l'index de Google.
 
-We check your [coverage report](https://support.google.com/webmasters/answer/7440203) every month and fix any issues your WordPress site may be having.
+Nous vérifions votre [rapport de couverture](https://support.google.com/webmasters/answer/7440203) tous les mois et corrigeons tous les problèmes que votre site WordPress pourrait rencontrer.
 
-## Mobile Usability
+## Convivialité mobile
 
-[Over 50% of website traffic](https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices) is on a mobile device. So if your site isn't optimized for mobile devices, you're likely losing interest from over half your audience due to poor usability.
+[Plus de 50% du trafic du site Web](https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices) se fait sur un appareil mobile. Donc, si votre site n'est pas optimisé pour les appareils mobiles, vous perdez probablement l'intérêt de plus de la moitié de votre public en raison d'une mauvaise convivialité.
 
-If you've taken care to make your website responsive, that is indeed the best strategy! However, not every responsive site UI makes the cut. There are certain UI and functional patterns that should be adhered to in order to have a properly mobile optimized website.
+Si vous avez pris soin de rendre votre site responsive, c'est effectivement la meilleure stratégie ! Cependant, toutes les interfaces utilisateur de sites réactifs ne font pas la différence. Certains modèles d'interface utilisateur et fonctionnels doivent être respectés afin d'avoir un site Web correctement optimisé pour les mobiles.
 
-Fortunately, Google Search Console will let you know [exactly what they are](https://support.google.com/webmasters/answer/9063469) and we'll go ahead and fix them for you.
+Heureusement, Google Search Console vous indiquera [exactement ce qu'ils sont](https://support.google.com/webmasters/answer/9063469) et nous les corrigerons pour vous.
