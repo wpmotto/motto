@@ -4,11 +4,11 @@ title: Console de recherche Google WordPress
 layout: "@layouts/Service.astro"
 keyword: wordpress google search console
 description: "Google vous indique exactement ce qu'il souhaite voir sur votre site Web dans une console que vous pouvez connecter. Nous mettons en œuvre toutes ses suggestions chaque mois afin qu'il n'y ait aucune conjecture si vous faites les choses correctement."
-price: '50'
+price: 50
 term: mois
 subnav:
   - Vérification du site
- "- Couverture de l'indice"
+  - Couverture de l'indice
   - Convivialité mobile
 ---
 
