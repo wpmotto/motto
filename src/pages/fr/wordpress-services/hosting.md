@@ -2,7 +2,7 @@
 sku: wp-hosting
 title: Hébergement avec Kinsta
 layout: "@layouts/Service.astro"
-description: "Hébergez votre site WordPress sur un serveur WordPress premium recommandé par Google. Profitez d'un serveur géré optimisé pour WordPress afin que votre site puisse fonctionner à une vitesse et une sécurité maximales."
+description: Hébergez votre site WordPress sur un serveur WordPress premium recommandé par Google. Profitez d'un serveur géré optimisé pour WordPress afin que votre site puisse fonctionner à une vitesse et une sécurité maximales.
 price: 35
 term: mois
 subnav:

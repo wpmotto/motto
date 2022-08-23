@@ -2,9 +2,9 @@
 sku: wp-pagespeed
 title: WordPress Optimization
 layout: "@layouts/Service.astro"
-price: '200'
+price: 200
 term: mois
-description: "Google met fortement l'accent sur la vitesse des pages pour tous les sites Web. À tel point qu'il dispose d'un outil pour évaluer votre site Web. Nous nous assurons que vous passez avec brio."
+description: Google met fortement l'accent sur la vitesse des pages pour tous les sites Web. À tel point qu'il dispose d'un outil pour évaluer votre site Web. Nous nous assurons que vous passez avec brio.
 subnav:
   - Gardez-le toujours au-dessus de 90+
   - Surveillez votre score Pagespeed

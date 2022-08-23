@@ -3,7 +3,7 @@ sku: wp-maintenance
 title: Service de maintenance WordPress
 layout: "@layouts/Service.astro"
 keyword: wordpress maintenance service
-description: "Si votre site WordPress est essentiel pour votre entreprise, il doit être maintenu par des experts WordPress. Nous maintenons votre site Web WordPress afin que vous puissiez avoir l'esprit tranquille et sans tracas."
+description: Si votre site WordPress est essentiel pour votre entreprise, il doit être maintenu par des experts WordPress. Nous maintenons votre site Web WordPress afin que vous puissiez avoir l'esprit tranquille et sans tracas.
 price: '160'
 term: mois
 included:

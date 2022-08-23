@@ -3,13 +3,13 @@ sku: wp-updates
 title: WordPress Updates
 layout: "@layouts/Service.astro"
 description: La chose la plus critique que vous puissiez faire pour WordPress est de garder ses plugins et son noyau à jour. Nous le faisons pour vous tous les mois, en toute sécurité et efficacement avec des rapports sur la façon dont les choses se sont passées.
-price: '125'
+price: 125
 term: mois
 subnav:
- "- 1 heure d'assistance aux développeurs"
+  - 1 heure d'assistance aux développeurs
   - Mise à jour des plugins et des thèmes
   - Mise à jour du noyau WordPress
- "- Mise à jour de l'infrastructure du serveur"
+  - Mise à jour de l'infrastructure du serveur
   - Mise à jour des versions PHP
   - Assurance qualité sur la mise en scène
   - Rapports détaillés de ce qui a été mis à jour

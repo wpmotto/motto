@@ -2,7 +2,7 @@
 sku: wp-accessibility
 title: Accessibilité WordPress
 layout: "@layouts/Service.astro"
-description: "Rendre votre site WordPress accessible aux utilisateurs est désormais une obligation légale dans de nombreux endroits. Ne prenez pas de retard. Nous peaufinerons votre site Web pour qu'il soit correctement accessible et qu'il mène l'avenir du contenu en ligne pour tous."
+description: Rendre votre site WordPress accessible aux utilisateurs est désormais une obligation légale dans de nombreux endroits. Ne prenez pas de retard. Nous peaufinerons votre site Web pour qu'il soit correctement accessible et qu'il mène l'avenir du contenu en ligne pour tous.
 price: 150
 term: mois
 subnav:
