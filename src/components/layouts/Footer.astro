@@ -1,9 +1,9 @@
 ---
-import { t } from "i18next";
+import i18next, { t } from "i18next";
+import { localizePath } from "astro-i18next";
 import { Trans } from "astro-i18next/components";
 import { Icon } from 'astro-icon'
 import Logo from "atoms:Logo";
-import i18next from "i18next";
 import { getRecentPosts } from '@lib/api';
 import { social } from '@lib/site';
 const posts = await getRecentPosts(5, i18next.language);
@@ -24,12 +24,12 @@ const posts = await getRecentPosts(5, i18next.language);
                         }
                     </li> ) }
                 </ul>
-                <a href="/contact" class="inline-block text-brand-midblue underline underline-offset-4">
+                <a href={localizePath('/contact', i18next.language)} class="inline-block text-brand-midblue underline underline-offset-4">
                     {t('footer.socialAction')} ➝
                 </a>
                 <h2 class="mt-12 h4 uppercase text-slate-400 tracking-widest font-heading font-bold">{t('footer.legal.title')}</h2>
                 <div class="text-sm text-slate-500 space-y-4">
-                    <p><a href="/privacy">{t('footer.legal.navigation.privacy')}</a></p>
+                    <p><a href={localizePath('/privacy', i18next.language)}>{t('footer.legal.navigation.privacy')}</a></p>
                     <p>
                         <Trans i18nKey="footer.legal.copyright">
                             Copyright <span>{(new Date).getFullYear()}</span>, Motto Design Studio Inc., All Rights Reserved

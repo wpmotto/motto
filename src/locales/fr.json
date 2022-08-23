@@ -22,7 +22,11 @@
     },
     "services": {
         "title": "Nos services WordPress",
+        "titleSecondary": "Services WordPress",
         "action": "Plus de services WordPress"
+    },
+    "service": {
+        "signup": "S'inscrire maintenant"
     },
     "trust": {
         "companies_title": "Entreprises qui nous font confiance",

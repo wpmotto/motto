@@ -1,6 +1,6 @@
 ---
-import i18next, { t } from "i18next";
 import { Icon } from 'astro-icon'
+import i18next, { t } from "i18next";
 import { localizePath, interpolate } from "astro-i18next";
 import { LanguageSelector } from "astro-i18next/components";
 import Logo from "atoms:Logo";
@@ -9,14 +9,14 @@ import QuizButton from "atoms:QuizButton";
 
 const navItems = [
 	{ 
-		url: '/wordpress-services', 
+		url: localizePath('/wordpress-services', i18next.language), 
 		label: interpolate(
 			"navigation.services", 
 			'<span class="hidden lg:inline">WordPress</span> Services'
 		)
 	},
 	{ 
-		url: '/about', 
+		url: localizePath('/about', i18next.language), 
 		label: t('navigation.about') 
 	},
 ]
@@ -44,7 +44,7 @@ const navItems = [
 		<MapleLeaf/>
 		<LanguageSelector showFlag={false} class="p-0 pr-6 sm:pr-7 border-none focus:outline-none text-xs sm:text-base"/>
 		<div>
-			<a class="inline-block bg-red-500 text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full text-sm sm:text-base" href="/contact">Contact</a>	
+			<a class="inline-block bg-red-500 text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full text-sm sm:text-base" href=localizePath('/contact', i18next.language)>Contact</a>	
 		</div>
 	</div>
 </header>

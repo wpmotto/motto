@@ -1,8 +1,9 @@
 ---
 import Plain from "@layouts/Plain.astro";
+import i18next, { t } from "i18next";
+import { localizePath } from "astro-i18next";
 import { servicePriceFormatted } from '@lib/helpers';
 import PageHeader from "layouts:PageHeader";
-
 export interface Props {
 	content: {
 		title: string;
@@ -53,7 +54,7 @@ const slugify = ( str ) => {
 ---
 <Plain>
 	<div class="wrapper">
-		<a href="/wordpress-services" class="uppercase text-xs text-slate-600 tracking-widest font-heading">← WordPress Services</a>
+		<a href={localizePath('/wordpress-services', i18next.language)} class="uppercase text-xs text-slate-600 tracking-widest font-heading">← {t('services.titleSecondary')}</a>
 	</div>		  
 	<article>
 	<PageHeader>
@@ -91,7 +92,7 @@ const slugify = ( str ) => {
 		<div class="md:w-96 order-1 md:order-2">
 			<div class="bg-slate-100 ring ring-white rounded-lg p-4 sticky top-8 shadow-xl max-h-screen overflow-y-scroll">
 					<a href={'/contact?service=' + encodeURIComponent(title)} class="px-6 py-4 bg-brand-action text-white rounded-full w-full block text-center font-heading uppercase font-semibold tracking-widest">
-						Sign Up Now
+						{t('service.signup')}
 					</a>
 					<p class="text-lead font-heading my-8 text-center">
 						{servicePriceFormatted(price, term)}
