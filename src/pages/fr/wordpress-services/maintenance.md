@@ -11,15 +11,15 @@ included:
   - wp-updates
 subnav:
   - Sauvegardes complètes quotidiennes
-  - 24/7 MONITORING
-  - Reporting
-  - Security
-  - Staging
-  - Free CDN
-  - Immediate SUPPORT
-  - ERROR MONITORING AND PRO-ACTIVE FIXES
-  - BRUTE FORCE ATTACKS
-  - LATEST PHP UPGRADES
+  - SURVEILLANCE 24/7
+  - Rapports
+  - Sécurité
+  - Mise en scène
+  - CDN gratuit
+  - SOUTIEN immédiat
+  - SURVEILLANCE DES ERREURS ET CORRECTIFS PROACTIFS
+  - ATTAQUES PAR FORCE BRUTE
+  - DERNIÈRES MISES À JOUR PHP
 ---
 
 [De nombreuses études](https://sucuri.net/reports/19-sucuri-2018-hacked-report.pdf) montrent que la plupart des sites WordPress piratés ont été compromis à partir de fichiers de base ou de plugins obsolètes. Ceci est presque entièrement évitable en gardant les choses à jour avec un plan de maintenance WordPress approprié. Le problème est que cela peut parfois être délicat car les mises à jour peuvent casser un site Web. Ils doivent être réalisés dans un environnement de staging et testés minutieusement avant d'être réalisés sur votre site en ligne. Nous simplifions cela en le faisant pour vous par un professionnel WordPress expérimenté chaque mois.
@@ -27,7 +27,7 @@ subnav:
 - Assistance illimitée
 - Mettre à jour le noyau et les plugins
 - Surveillance des erreurs et correctifs proactifs
-- Professional staging of all updates so your live site stays pristine.
+- Mise en scène professionnelle de toutes les mises à jour afin que votre site en ligne reste intact.
 
 ## SAUVEGARDES COMPLÈTES QUOTIDIENNES
 
