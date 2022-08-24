@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import preact from '@astrojs/preact';
 import tailwind from "@astrojs/tailwind";
 import astroI18next from "astro-i18next";
-import sitemap from "@astrojs/sitemap";
+// import sitemap from "@astrojs/sitemap";
 import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
 import robotsTxt from 'astro-robots-txt';
@@ -24,15 +24,15 @@ export default defineConfig({
         forward: ["dataLayer.push"],
       },
     }),
-    sitemap({
-      i18n: {
-        defaultLocale: "en", // All urls that don't contain `es` or `fr` after `https://stargazers.club/` will be treated as default locale, i.e. `en`
-        locales: {
-          en: "en", // The `defaultLocale` value must present in `locales` keys
-          fr: "fr",
-        },
-      },
-    }),
+    // sitemap({
+    //   i18n: {
+    //     defaultLocale: "en", // All urls that don't contain `es` or `fr` after `https://stargazers.club/` will be treated as default locale, i.e. `en`
+    //     locales: {
+    //       en: "en", // The `defaultLocale` value must present in `locales` keys
+    //       fr: "fr",
+    //     },
+    //   },
+    // }),
     astroI18next({
       baseLocale: "en",
       supportedLocales: ["en", "fr"],

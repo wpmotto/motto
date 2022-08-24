@@ -15,7 +15,7 @@ Both google and your users will thank you for optimizing your WordPress site's p
 
 ## GOOGLE PAGESPEED 90+ SCORE
 
-Google PageSpeed Insights is a tool published by Google that will analyze and score your webpage based on many [performance factors](https://motto.ca/product/uptime/).
+Google PageSpeed Insights is a tool published by Google that will analyze and score your webpage based on many [performance factors](https://web.dev/measure/).
 
 We run the report every month and implement whatever is needed to score you above 90%. Oftentimes your score can drop depending on the updates you make so we stay on top of it.
 

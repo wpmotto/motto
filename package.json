@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "wrangler pages dev ./dist"
+    "preview": "astro preview"
   },
   "devDependencies": {
     "@astrojs/preact": "^0.5.2",
