@@ -3,6 +3,7 @@ import Card from "molecules:Card";
 import { t } from "i18next";
 
 const services = await Astro.glob("../../pages/wordpress-services/*.md");
+
 const featured = [
     'wp-pagespeed', 
     'wp-security',
@@ -23,6 +24,6 @@ const featured = [
     )}
     </div>
     <p class="text-center my-12">
-        <a href="/wordpress-services" class="text-link">{t("services.action")} ➝</a>
+        <a href="/wordpress-services/" class="text-link">{t("services.action")} ➝</a>
     </p>
 </section>

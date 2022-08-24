@@ -9,14 +9,14 @@ import QuizButton from "atoms:QuizButton";
 
 const navItems = [
 	{ 
-		url: localizePath('/wordpress-services', i18next.language), 
+		url: localizePath('/wordpress-services/', i18next.language), 
 		label: interpolate(
 			"navigation.services", 
 			'<span class="hidden lg:inline">WordPress</span> Services'
 		)
 	},
 	{ 
-		url: localizePath('/about', i18next.language), 
+		url: localizePath('/about/', i18next.language), 
 		label: t('navigation.about') 
 	},
 ]
@@ -44,7 +44,7 @@ const navItems = [
 		<MapleLeaf/>
 		<LanguageSelector showFlag={false} class="p-0 pr-6 sm:pr-7 border-none focus:outline-none text-xs sm:text-base"/>
 		<div>
-			<a class="inline-block bg-red-500 text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full text-sm sm:text-base hover:bg-brand-action/20 transition ring-2 hover:text-brand-action ring-inset ring-brand-action" href={localizePath('/contact', i18next.language)}>Contact</a>	
+			<a class="inline-block bg-red-500 text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full text-sm sm:text-base hover:bg-brand-action/20 transition ring-2 hover:text-brand-action ring-inset ring-brand-action" href={localizePath('/contact/', i18next.language)}>Contact</a>	
 		</div>
 	</div>
 </header>

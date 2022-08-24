@@ -54,7 +54,7 @@ const slugify = ( str ) => {
 ---
 <Plain>
 	<div class="wrapper">
-		<a href={localizePath('/wordpress-services', i18next.language)} class="uppercase text-xs text-slate-600 tracking-widest font-heading">← {t('services.titleSecondary')}</a>
+		<a href={localizePath('/wordpress-services/', i18next.language)} class="uppercase text-xs text-slate-600 tracking-widest font-heading">← {t('services.titleSecondary')}</a>
 	</div>		  
 	<article>
 	<PageHeader>
@@ -91,7 +91,7 @@ const slugify = ( str ) => {
 		</div>
 		<div class="md:w-96 order-1 md:order-2">
 			<div class="bg-slate-100 ring ring-white rounded-lg p-4 sticky top-8 shadow-xl max-h-screen overflow-y-scroll">
-					<a href={'/contact?service=' + encodeURIComponent(title)} class="px-6 py-4 bg-brand-action text-white rounded-full w-full block text-center font-heading uppercase font-semibold tracking-widest">
+					<a href={'/contact/?service=' + encodeURIComponent(title)} class="px-6 py-4 bg-brand-action text-white rounded-full w-full block text-center font-heading uppercase font-semibold tracking-widest">
 						{t('service.signup')}
 					</a>
 					<p class="text-lead font-heading my-8 text-center">

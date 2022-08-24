@@ -24,12 +24,12 @@ const posts = await getRecentPosts(5, i18next.language);
                         }
                     </li> ) }
                 </ul>
-                <a href={localizePath('/contact', i18next.language)} class="inline-block text-brand-midblue underline underline-offset-4">
+                <a href={localizePath('/contact/', i18next.language)} class="inline-block text-brand-midblue underline underline-offset-4">
                     {t('footer.socialAction')} ➝
                 </a>
                 <h2 class="mt-12 h4 uppercase text-slate-400 tracking-widest font-heading font-bold">{t('footer.legal.title')}</h2>
                 <div class="text-sm text-slate-500 space-y-4">
-                    <p><a href={localizePath('/privacy', i18next.language)}>{t('footer.legal.navigation.privacy')}</a></p>
+                    <p><a href={localizePath('/privacy/', i18next.language)}>{t('footer.legal.navigation.privacy')}</a></p>
                     <p>
                         <Trans i18nKey="footer.legal.copyright">
                             Copyright <span>{(new Date).getFullYear()}</span>, Motto Design Studio Inc., All Rights Reserved
@@ -49,7 +49,7 @@ const posts = await getRecentPosts(5, i18next.language);
                         ))}
                     </ul>
                     <div class="md:text-right mt-6">
-                        <a href="/blog" class="inline-block text-brand-midblue underline underline-offset-4">
+                        <a href="/blog/" class="inline-block text-brand-midblue underline underline-offset-4">
                             {t('footer.blog.action')} ➝
                         </a>
                     </div>

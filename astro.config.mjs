@@ -9,6 +9,7 @@ import robotsTxt from 'astro-robots-txt';
 
 export default defineConfig({
   site: "https://motto.ca/",
+  trailingSlash: 'always',
   experimental: {
     integrations: true,
   },
