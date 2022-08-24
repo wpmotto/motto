@@ -1,7 +1,7 @@
 ---
 import Plain from "@layouts/Plain.astro";
 import i18next, { t } from "i18next";
-import { localizePath } from "astro-i18next";
+import { localizePath, detectLocaleFromPath } from "astro-i18next";
 import { servicePriceFormatted } from '@lib/helpers';
 import PageHeader from "layouts:PageHeader";
 export interface Props {
@@ -26,6 +26,9 @@ const { content: {
 	subnav,
 } } = Astro.props as Props;
 
+const locale = detectLocaleFromPath( Astro.url.pathname );
+i18next.changeLanguage(locale);
+
 const files = await Astro.glob("../pages/wordpress-services/*.md");
 const services = included && files.filter(i => included.includes(i.frontmatter.sku));
 
@@ -48,9 +51,8 @@ const slugify = ( str ) => {
         .replace(/\s+/g, '-') // collapse whitespace and replace by -
         .replace(/-+/g, '-'); // collapse dashes
 
-    return str;	
+    return str;
 }
-
 ---
 <Plain>
 	<div class="wrapper">

@@ -15,7 +15,7 @@ Google et vos utilisateurs vous remercieront d'avoir optimisé les performances 
 
 ## NOTE DE LA VITESSE DES PAGES GOOGLE 90+
 
-Google PageSpeed Insights est un outil édité par Google qui va analyser et noter votre page web en fonction de nombreux [facteurs de performance](https://motto.ca/product/uptime/) .
+Google PageSpeed Insights est un outil édité par Google qui va analyser et noter votre page web en fonction de nombreux [facteurs de performance](https://web.dev/measure/) .
 
 Nous exécutons le rapport tous les mois et mettons en œuvre tout ce qui est nécessaire pour obtenir un score supérieur à 90 %. Souvent, votre score peut baisser en fonction des mises à jour que vous effectuez, nous restons donc au courant.
 
