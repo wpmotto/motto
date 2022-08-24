@@ -1,8 +1,9 @@
 const API_URL = import.meta.env.WP_URL;
+const GRAPH_API_URL = API_URL + '/graphql';
 
 async function fetchAPI(query, { variables } = {}) {
   const headers = { 'Content-Type': 'application/json' };
-  const res = await fetch(API_URL, {
+  const res = await fetch(GRAPH_API_URL, {
     method: 'POST',
     headers,
     body: JSON.stringify({ query, variables }),
@@ -30,6 +31,12 @@ export async function getAllPostsWithSlugs(num = 1000, lang = "en") {
     }
     `);
   return data?.posts;
+}
+
+export async function getHeadMeta(path) {
+  const url = new URL(path, API_URL);
+  const wpMetaRequest = await fetch(`${API_URL}/wp-json/rankmath/v1/getHead?url=${url.href}`);
+  return await wpMetaRequest.json();
 }
 
 export async function getRecentPosts(num = 12, lang = "en") {

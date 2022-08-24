@@ -6,6 +6,7 @@ import ContactForm from '@/ContactForm';
 import i18next, { t } from "i18next";
 const { title, lang } = Astro.props;
 i18next.changeLanguage(lang as string);
+const action = import.meta.env.WP_URL + '/wp-json/contact-form-7/v1/contact-forms/1551/feedback';
 ---
 <Plain>
 	<div class="px-8 max-w-xl mx-auto pb-20">
@@ -15,7 +16,7 @@ i18next.changeLanguage(lang as string);
 			<span class="text-slate-300">/</span>
 			<a class="text-brand-action underline underline-offset-2" href={`tel:${t('business.phone')}`}>{t('business.phone')}</a>
 		</p>
-		<ContactForm client:visible/>
+		<ContactForm client:visible action={action} />
 		<ul class="flex justify-center space-x-4 my-6 text-slate-500">
 			{ social.map(i => <li><a href={i.link} title={i.title}>
 				{ i.name === 'wpvip' ? 

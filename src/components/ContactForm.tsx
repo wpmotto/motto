@@ -7,23 +7,20 @@ function ErrorText({error}) {
     );
 }
 
-export default function ContactForm() {
-
+export default function ContactForm({ action }) {
     let params = null;
     if (typeof window !== "undefined") {
         const urlSearchParams = new URLSearchParams(window.location.search);
         params = Object.fromEntries(urlSearchParams.entries());
     }
 
-    
     const [validation, setValidation] = useState(false);
 
     const submit = async (event) => {
       event.preventDefault();
-      const response = await fetch(
-        'https://motto.ca/wp-json/contact-form-7/v1/contact-forms/1551/feedback', 
-        { method: 'POST', body: new FormData(event.target) }
-      );
+      const response = await fetch( action, { 
+        method: 'POST', body: new FormData(event.target) 
+      });
       const data = await response.json();
       setValidation(normalizeContactForm7Response(data));
     };
