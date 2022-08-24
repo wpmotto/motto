@@ -19,7 +19,7 @@ i18next.changeLanguage(lang as string);
             .sort((a, b) =>  order.indexOf(a.frontmatter.sku) > order.indexOf(b.frontmatter.sku) ? 1 : -1 )
             .map( ({url, frontmatter}) => 
                 <Card title={frontmatter.title} href={url}>
-                    <img slot="image" class="h-52" height="208" width="309" src={`/assets/svgs/services/${frontmatter.sku}.svg`} />
+                    <img slot="image" class="h-52" height="208" width="309" src={`/assets/svgs/services/${frontmatter.sku}.svg`} alt={frontmatter.title}/>
                     <p class="text-sm text-slate-700 mb-6">{ frontmatter.description }</p>
                     { frontmatter.price &&
                     <div class="mt-auto text-lg font-heading my-6">
