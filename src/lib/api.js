@@ -45,6 +45,7 @@ export async function getRecentPosts(num = 12, lang = "en") {
       edges {
         node {
           slug
+          uri
           title
           date
           content
@@ -77,10 +78,10 @@ export async function getRecentPosts(num = 12, lang = "en") {
   }`);
 
   return data.posts.edges.map(({ node }) => {
-    const { slug, title, date, content, featuredImage, author } = node;
+    const { uri, title, date, content, featuredImage, author } = node;
     return {
       title,
-      href: `/${slug}`,
+      href: uri,
       datetime: date,
       date: formatDate(date),
       content,
@@ -99,6 +100,7 @@ export async function getPost(slug) {
     post(id: "${slug}", idType: URI) {
       title
       content
+      uri
       date
       author {
         node {
@@ -126,10 +128,10 @@ export async function getPost(slug) {
     }
   }`);
 
-  const { title, date, content, featuredImage, author } = data.post;
+  const { title, date, content, featuredImage, author, uri } = data.post;
   return {
     title,
-    href: `/${slug}`,
+    href: uri,
     datetime: date,
     date: formatDate(date),
     content,
