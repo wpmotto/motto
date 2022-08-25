@@ -39,7 +39,7 @@ const { post } = Astro.props;
         <div class="flex-shrink-0">
           <a href={post.author.href}>
             <span class="sr-only">{post.author.name}</span>
-            <img class="h-10 w-10 rounded-full" src={post.author.imageUrl} alt="" />
+            <img class="h-10 w-10 rounded-full" src={post.author.imageUrl} alt={post.author.name} />
           </a>
         </div>
         <div class="ml-3">
