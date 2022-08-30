@@ -4,14 +4,14 @@ title: Suivi des conversions WordPress
 keyword: Suivi des conversions WordPress
 layout: "@layouts/Service.astro"
 description: Le suivi du taux de conversion des clients de votre site WordPress est fondamental pour toute décision que vous prenez avec votre site Web. Nous nous occupons de tous les aspects techniques pour vous.
-price: '50'
+price: 50
 term: mois
 subnav:
   - Installation du suivi des conversions
   - Identifier les actions qui comptent
   - Configuration professionnelle de Google Analytics
- "- Rapports mensuels sur les conversions et données essentielles pour l'entreprise"
- "- Migration d'Universal vers GA4"
+  - Rapports mensuels sur les conversions et données essentielles pour l'entreprise
+  - Migration d'Universal vers GA4
 ---
 
 Avoir un site Web est une nécessité absolue à l'ère numérique et si vous êtes déjà arrivé jusque là pour votre entreprise, félicitations! Cependant, la question que vous devez maintenant vous poser est la suivante : **mon site Web atteint-il réellement ses objectifs?**

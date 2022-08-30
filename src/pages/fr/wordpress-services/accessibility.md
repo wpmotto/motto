@@ -2,15 +2,15 @@
 sku: wp-accessibility
 title: Accessibilité WordPress
 layout: "@layouts/Service.astro"
-description: "Rendre votre site WordPress accessible aux utilisateurs est désormais une obligation légale dans de nombreux endroits. Ne prenez pas de retard. Nous peaufinerons votre site Web pour qu'il soit correctement accessible et qu'il mène l'avenir du contenu en ligne pour tous."
-price: '150'
+description: Rendre votre site WordPress accessible aux utilisateurs est désormais une obligation légale dans de nombreux endroits. Ne prenez pas de retard. Nous peaufinerons votre site Web pour qu'il soit correctement accessible et qu'il mène l'avenir du contenu en ligne pour tous.
+price: 150
 term: mois
 subnav:
- "- Solutions pour l'accessibilité du site Web"
- "- Amélioration de l'accessibilité par les humains"
-  - Accessibilité Google Lighthouse
- "- Maintenir une page de déclaration d'accessibilité"
- "- Inclure un formulaire de contact pour les améliorations d'accessibilité"
+    - Solutions pour l'accessibilité du site Web
+    - Amélioration de l'accessibilité par les humains
+    - Accessibilité Google Lighthouse
+    - Maintenir une page de déclaration d'accessibilité
+    - Inclure un formulaire de contact pour les améliorations d'accessibilité
 ---
 
 Si vous ne le savez pas déjà, l'accessibilité d'un site Web est la possibilité pour les utilisateurs, quelles que soient leurs capacités, de lire et d'interagir avec votre site Web. Tout le monde n'a pas une bonne vue, une motricité parfaite ou d'autres capacités que l'on peut considérer comme allant de soi chez la majorité des gens. Heureusement, nous pouvons faire beaucoup pour inclure davantage de personnes handicapées dans l'accès à votre site Web. Tout comme vous pourriez installer une rampe pour fauteuil roulant à côté des escaliers de votre magasin, nous pouvons faire certaines choses pour que votre site Web augmente son accessibilité.
