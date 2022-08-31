@@ -11,7 +11,7 @@ subnav:
     - Receive a report on improvements made
 ---
 
-Both google and your users will thank you for optimizing your WordPress site's performance. We offer a guaranteed grade straigth from Google themselves. Our WordPress speed optimization aims to please Google by following all of its publicized recommendations. Achieve better SEO results, user experience, and ad spend by adhering to their guidelines.
+Both google and your users will thank you for optimizing your WordPress site's performance. We offer a guaranteed grade straight from Google themselves. Our WordPress speed optimization aims to please Google by following all of its publicized recommendations. Achieve better SEO results, user experience, and ad spend by adhering to their guidelines.
 
 ## GOOGLE PAGESPEED 90+ SCORE
 
