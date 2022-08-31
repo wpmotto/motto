@@ -19,7 +19,7 @@ Accessibility on the web has always been important. Not everyone has the same ab
 
 The techniques involved in making a website accessible to real users, also make it more accessible to machines. Machines like Google's search bots that try to read and interpret your website for inclusion in its search results. So increasing your website accessibility can also increase your search engine traffic. It's a really nice 2 for 1 deal. 
 
-Just as there are laws for discriminating against disabilities in every day life of many countries, these same laws are being extended to the online world. For example, we are a Canadian company and Bill C-81 in Canada can impose up to a $25,000 fine for websites that don't comply with the [WCAG 2.0 accessibility standards](https://www.w3.org/TR/WCAG20/). [Other laws in the EU and other territories](/how-to-achieve-great-accessibility-on-canadian-websites) are coming soon too, so no matter where you are you'll want to be ahead of the curve in providing proper accessilibility to the citizens of your country. 
+Just as there are laws for discriminating against disabilities in every day life of many countries, these same laws are being extended to the online world. For example, we are a Canadian company and Bill C-81 in Canada can impose up to a $25,000 fine for websites that don't comply with the [WCAG 2.0 accessibility standards](https://www.w3.org/TR/WCAG20/). [Other laws in the EU and other territories](/how-to-achieve-great-accessibility-on-canadian-websites/) are coming soon too, so no matter where you are you'll want to be ahead of the curve in providing proper accessilibility to the citizens of your country. 
 
 ## Solutions to Website Accessility
 
@@ -35,7 +35,7 @@ There's not yet a good replacement for a real human developer working at the lev
 
 ### Google Lighthouse Accessiblity 
 
-There are several tools that will grade the accessibility of your website and indicate the things you may need to improve. Similarly to our [Google pagespeed optimization](/wordpress-services/speed-optimization), Google also offers an accessibility grading tool. As part of our service, we will grade your site every month and ensure it's over 90. 
+There are several tools that will grade the accessibility of your website and indicate the things you may need to improve. Similarly to our [Google pagespeed optimization](/wordpress-services/speed-optimization/), Google also offers an accessibility grading tool. As part of our service, we will grade your site every month and ensure it's over 90. 
 
 #### Why Not 100?
 
