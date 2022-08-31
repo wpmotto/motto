@@ -34,7 +34,7 @@ export async function getAllPostsWithSlugs(num = 1000, lang = "en") {
 }
 
 export async function getHeadMeta(path) {
-  const url = new URL(path, API_URL);
+  const url = new URL(path, 'https://motto.ca');
   const wpMetaRequest = await fetch(`${API_URL}/wp-json/rankmath/v1/getHead?url=${url.href}`);
   return await wpMetaRequest.json();
 }
