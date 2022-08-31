@@ -12,7 +12,7 @@ subnav:
     - Mobile Usability
 ---
 
-[Google search console](https://search.google.com/search-console/about) allows you to connect your WordPress site and continuously analyze it for improvements Google would like to see.
+Your WordPress [Google search console](https://search.google.com/search-console/about) allows you to connect your WordPress site and continuously analyze it for improvements Google would like to see.
 
 This is a goldmine of information since one can assume that taking Google’s own recommendations would lead to better rankings and traffic.
 
