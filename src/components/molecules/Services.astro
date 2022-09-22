@@ -3,7 +3,10 @@ import Card from "molecules:Card";
 import i18next, { t } from "i18next";
 import { localizePath } from "astro-i18next";
 
-const services = await Astro.glob("../../pages/wordpress-services/*.md");
+const allServices = await Astro.glob('../../pages/**/wordpress-services/*.md')
+const startPathLang = i18next.language === 'en' ? '/wordpress-services' : `/${i18next.language}/wordpress-services`
+console.log(startPathLang)
+const services = allServices.filter(s => s.url.startsWith(startPathLang))
 
 const featured = [
     'wp-pagespeed', 
