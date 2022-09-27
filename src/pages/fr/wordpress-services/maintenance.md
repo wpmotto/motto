@@ -1,7 +1,7 @@
 ---
 sku: wp-maintenance
 title: Service de maintenance WordPress
-layout: @layouts/Service.astro
+layout: "@layouts/Service.astro"
 keyword: wordpress maintenance service
 description: Si votre site WordPress est essentiel à votre activité, il doit être géré par des experts WordPress. Notre service de maintenance WordPress assignera un webmestre WordPress à votre site web afin que vous puissiez garder l'esprit tranquille et sans tracas.
 price: 160
