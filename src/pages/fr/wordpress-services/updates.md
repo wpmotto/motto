@@ -1,15 +1,15 @@
 ---
 sku: wp-updates
-title: WordPress Updates
+title: Mises à jour pour WordPress
 layout: "@layouts/Service.astro"
 description: La chose la plus cruciale que vous puissiez faire pour WordPress est de garder ses modules externes et ses fichiers de base à jour. Nous le faisons pour vous tous les mois, en toute sécurité et efficacement, avec des rapports sur la manière dont les choses se sont passées.
-price: 125
+price: '125'
 term: mois
 subnav:
-  - 1 heure d'assistance par des développeurs
+ "- 1 heure d'assistance par des développeurs"
   - Mise à jour des modules externes et des thèmes
   - Mise à jour des fichiers de base de WordPress
-  - Mise à jour de l'infrastructure du serveur
+ "- Mise à jour de l'infrastructure du serveur"
   - Mise à jour des versions de PHP
   - Assurance qualité avec simulations
   - Rapports détaillés sur ce qui a été mis à jour
