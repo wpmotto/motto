@@ -1,0 +1,17 @@
+---
+import { Trans } from "astro-i18next/components";
+import Plain from '@layouts/Plain.astro';
+const { title, lang } = Astro.props;
+import i18next, { t } from "i18next";
+i18next.changeLanguage(lang as string);
+---
+<Plain>
+    <div class="wrapper">
+        <div class="text-center mx-auto max-w-xl my-20">
+            <h1 class="title">{title}</h1>
+        </div>
+        <div class="grid grid-cols-1">
+            <slot></slot>
+        </div>
+    </div>
+</Plain>
